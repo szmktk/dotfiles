@@ -1,0 +1,17 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+  "auto_complete_selector": "text.plain, meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+  "color_scheme":"Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+  "font_size": 12,
+  "ignored_packages":
+  [
+    "Vintage",
+  ],
+  "rulers": [100],
+  "show_encoding": true,
+  //"theme": "Default.sublime-theme",
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "scroll_past_end": true,
+}

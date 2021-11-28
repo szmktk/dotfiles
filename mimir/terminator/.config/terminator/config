@@ -1,0 +1,76 @@
+[global_config]
+  handle_size = 0
+  window_state = maximise
+[keybindings]
+  edit_tab_title = <Primary><Alt>e
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_6 = <Alt>6
+[layouts]
+  [[default]]
+    [[[child1]]]
+      command = ""
+      directory = ""
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[test]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1920, 1052
+      title = szyms@smikimob2:~
+      type = Window
+    [[[child1]]]
+      active_page = 2
+      labels = None, None, jekyll
+      last_active_term = 6c33e1a9-7faf-491c-af40-41613937fea9, 33a5fd10-c440-4650-b7c5-50ce8c788bed, feb8bf6f-2727-489d-a7c7-6e4da8462f20
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[terminal2]]]
+      command = ""
+      directory = /home/szyms/Downloads
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 6c33e1a9-7faf-491c-af40-41613937fea9
+    [[[terminal3]]]
+      command = env startup_cmd="source ~/.git-szyms/git-bash-profile" bash
+      directory = /home/szyms/workspace
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 33a5fd10-c440-4650-b7c5-50ce8c788bed
+    [[[terminal4]]]
+      command = env startup_cmd="ssh -l oc 91.240.76.117 -p 47659" bash
+      directory = ""
+      order = 2
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = feb8bf6f-2727-489d-a7c7-6e4da8462f20
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.93
+    background_type = transparent
+    copy_on_selection = True
+    cursor_color = "#8ae234"
+    foreground_color = "#8ae234"
+    scrollback_infinite = True
+    scrollback_lines = 1000
+    scrollbar_position = hidden
+    use_system_font = False

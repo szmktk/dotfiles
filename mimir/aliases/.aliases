@@ -1,0 +1,139 @@
+# essential aliases:
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+alias tree='tree -a'
+alias ls='ls --color=auto'
+alias ll='ls -lah --group-directories-first'
+alias l='ls -lah --group-directories-first'
+alias rm='rm -i'
+alias cp='cp -i'
+alias su='sudo su'
+alias syu='sudo pacman -Syu'
+alias pacman-fzf='pacman -Slq | fzf --multi --preview "pacman -Si {1}" | xargs -ro sudo pacman -S'
+alias update-pacman-mirrorlist='sudo reflector --verbose -l 10 -p http --sort rate --save /etc/pacman.d/mirrorlist'
+
+# graphics:
+# these are now depreciated, I've put them in ~/bin as scripts
+#alias 1mon='xrandr --output HDMI1 --off'
+#alias 2mon_left='xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP1 --primary --mode 1366x768 --pos 1920x312 --rotate normal'
+#alias 2mon_right='xrandr --output HDMI1 --mode 1920x1080 --pos 1366x0 --rotate normal --output eDP1 --primary --mode 1366x768 --pos 0x312 --rotate normal'
+alias fixbg='gsettings set org.mate.background picture-filename '\''/home/szyms/Pictures/wall/material-blue-2.jpg'\'' && gsettings set org.mate.background picture-filename '\''/home/szyms/Pictures/wall/material-blue-1.png'\'''
+alias bgset='feh --bg-scale /home/szyms/Pictures/alien2.png'
+
+# quick pings:
+alias ?='ping -c4 -i0.2 google.com'
+alias pmik='ping -c4 -i0.2 192.168.50.1'
+alias ip?='wget -qO- checkip.amazonaws.com'
+
+# SSH shortcuts:
+alias brix='ssh -l kodiuser 192.168.50.35'
+alias rpi='ssh -l szyms zi0n.duckdns.org -p 55433'
+alias rpih='ssh -l szyms 192.168.50.71'
+alias linode-vps='ssh -l szyms mikitiuk.eu -p 54321'
+alias olc='ssh -l root 192.168.50.30'
+alias linkpocket='ssh -l ec2-user linkpocket.duckdns.org -p 44998'
+alias traust='ssh -l szyms traust.duckdns.org -p 44998'
+alias archvm='ssh localhost -p 2222 -i ~/.ssh/bb-upc-biz'
+
+# run vpn!
+alias mikrotik-vpn='cd ~/.openvpn/mikrotik/ && sudo openvpn mikrotik.conf'
+alias mikrotik-ssh='ssh -l admin 192.168.50.1'
+
+# AWS profiles:
+alias amz-echo='echo $AWS_DEFAULT_PROFILE'
+alias amz-def='export AWS_DEFAULT_PROFILE=default'
+alias amz-adstpp-root='export AWS_DEFAULT_PROFILE=adstpp-root'
+
+# vpn
+alias tp-vpn='cd ~/.openvpn/trust-payments/ && sudo openvpn --config client.ovpn --auth-retry interact'
+alias mikrotik-vpn='cd ~/.openvpn/mikrotik/ && sudo openvpn config.ovpn'
+
+# source various files quickly:
+alias brc='source ~/.bashrc'
+alias zrc='source ~/.zshrc'
+alias grc='source ~/.git-szyms/git-bash-profile'
+
+# error-correcting aliases:
+alias cd-='cd -'
+alias cd..='cd ..'
+alias ll..='ll ..'
+
+# encryption:
+alias mailz='gocryptfs ~/.mailz ~/.thunderbird && ls -lah ~/.thunderbird'
+alias mailz-homepl='gocryptfs ~/.mailz-homepl ~/.thunderbird && ls -lah ~/.thunderbird'
+alias umailz='fusermount -u ~/.thunderbird && ls -lah ~/.thunderbird'
+# the path below was modified dear wanderer 🙂
+alias vc-mnt='veracrypt -t ~/path/to/your/vault.img /media/veracrypt3 --pim 0 --keyfiles "" --protect-hidden no --slot 1'
+alias vc-ls='veracrypt -t -l'
+alias vc-umount='veracrypt -t -d --slot 1'
+
+# miscellaneous:
+alias fuck='TF_CMD=$(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(alias) thefuck $(fc -ln -1)) && eval $TF_CMD && history -s $TF_CMD'
+alias kh='nvim /home/szyms/.ssh/known_hosts'				# quick editing this of file is handy when ssh servers change often
+alias nm-restart='killall nm-applet && setsid nm-applet'	# fixes nm-applet's annoying feature of not showing correct signal strnegth
+alias rfk='sudo rfkill unblock all'							# unblocks wireless devices which can be blocked when the device suspends
+alias wakebrix='wakeonlan fc:aa:14:ad:d2:a0'				# remotely wake my HTPC
+alias rpi-wakebrix='ssh -l szyms zi0n.duckdns.org -p 55433 wakeonlan fc:aa:14:ad:d2:a0'
+alias ccat='pygmentize -g'
+alias bt-start='sudo systemctl start bluetooth'
+alias bt-stop='sudo systemctl stop bluetooth'
+alias bt-restart='sudo systemctl restart bluetooth'
+alias star-wars='telnet towel.blinkenlights.nl'
+alias btctl='sudo systemctl restart bluetooth && bluetoothctl'
+alias mindfuck='fortune -a | fmt -80 -s | $(shuf -n 1 -e cowsay cowthink) -$(shuf -n 1 -e b d g p s t w y) -f $(shuf -n 1 -e $(cowsay -l | tail -n +2)) -n | lolcat --seed 0 --spread 1.0'
+alias adb-nexus5x='adb connect 192.168.50.25:5555'
+alias adb-dumpling='adb connect 192.168.50.26:5555'
+alias rst='reset'
+alias open='xdg-open'
+alias vi='nvim'
+alias fd='fd -H'
+alias dnd='gsettings set org.mate.NotificationDaemon do-not-disturb true'
+alias dnd-off='gsettings set org.mate.NotificationDaemon do-not-disturb false'
+alias pwr-btn-nothing='gsettings set org.mate.power-manager button-lid-ac nothing'
+alias pwr-btn-suspend='gsettings set org.mate.power-manager button-lid-ac suspend'
+alias pwr-btn-read='gsettings get org.mate.power-manager button-lid-ac'
+alias nl='nl -b a'
+alias dps='docker ps'
+alias dcd='docker-compose down'
+alias dcu='docker-compose up -d'
+alias cdd='cd ~/Downloads'
+
+# youtube-dl shortcuts:
+alias yt='youtube-dl'
+alias yt720="youtube-dl -f 'bestvideo[height<=720]+bestaudio/best[height<=720]'"
+
+# run vnc server @brix
+alias brix-vnc='ssh -l kodiuser 192.168.50.35 "x0vncserver -display :0 -passwordfile ~/.vnc/passwd"'
+
+# git shortcuts:
+alias gd="git diff"
+alias gh='git log --oneline | head'
+alias gpo='git push origin'
+alias gpob='git push origin "$(git_current_branch)"'
+alias gpl='git pull'
+alias gplb='git pull origin "$(git_current_branch)"'
+alias gcm='git checkout master'
+alias gcb='git checkout -b'
+alias branches='git branch -a'
+alias lgt='lazygit'
+
+# kubectl shortcuts:
+#alias lgi-kubeconfig='export KUBECONFIG=~/.kube/config-lgi'
+alias k-pods-dev='kubectl get pods -n development | grep'
+
+# functions:
+psgrep() {
+  ps -ef | {
+    read -r;
+    echo "$REPLY";
+    grep -i --color=auto "$@"
+  }
+}
+
+mkcd() {
+  mkdir -p -- "$@" && eval cd -- "\"\$$#\""
+}
+
+w-later() {
+    ssh -l szyms linkpocket.duckdns.org -p 44998 "mkdir files/vids/$@ && cd files/vids/$@ && youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' $@"
+}

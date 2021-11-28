@@ -1,0 +1,14 @@
+#!/bin/bash
+
+case $BLOCK_BUTTON in
+    1) sp play ;; # left click
+    4) sp next ;; # scroll up
+    5) sp prev ;; # scroll down
+esac
+
+if sp status | grep 'Paused' > /dev/null; then
+    printf '\xef\x81\x8c ' # fa-pause
+else
+    printf '\xef\x81\x8b ' # fa-play
+fi
+sp current-oneline

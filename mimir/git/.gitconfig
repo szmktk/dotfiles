@@ -1,0 +1,40 @@
+[user]
+	email = sz.mktk@gmail.com
+	name = Szymon Mikitiuk
+[color]
+	ui = auto
+[push]
+	default = upstream
+[pull]
+	ff = only
+[merge]
+	conflictstyle = diff3
+[core]
+	editor = /usr/sbin/nvim
+	autocrlf = false
+[alias]
+	ac = !git add -A && git commit
+	s = !git status
+	l = log --oneline
+[fetch]
+	prune = true
+[diff]
+    colorMoved = default
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+    side-by-side = true
+    #line-numbers = true
+
+[interactive]
+    diffFilter = delta --color-only
+

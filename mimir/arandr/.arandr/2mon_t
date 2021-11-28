@@ -1,0 +1,12 @@
+#!/bin/bash
+
+xrandr --output HDMI1 --mode 1920x1080 --pos 1366x0 --rotate normal --output eDP1 --primary --mode 1366x768 --pos 1640x1080 --rotate normal
+sleep 0.1
+gsettings set org.mate.background picture-filename /home/szyms/Pictures/wall/CURRENT_WALL1
+sleep 0.1
+gsettings set org.mate.background picture-filename /home/szyms/Pictures/wall/CURRENT_WALL2
+sleep 0.1
+gsettings set org.mate.background picture-options scaled
+sleep 0.1
+gsettings set org.mate.background picture-options zoom
+

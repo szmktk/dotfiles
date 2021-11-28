@@ -1,0 +1,1947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doublecmd DCVersion="0.9.10 beta" ConfigVersion="10">
+  <Configuration Save="True" SortOrder="0" TreeType="0">
+    <UseConfigInProgramDir>False</UseConfigInProgramDir>
+    <FolderTabs Save="True"/>
+  </Configuration>
+  <Colors>
+    <FileFilters>
+      <Filter>
+        <Name>Pascal sources</Name>
+        <FileMasks>*.pas;*.pp</FileMasks>
+        <Color>32768</Color>
+        <Attributes/>
+      </Filter>
+      <Filter>
+        <Name>Pascal binaries</Name>
+        <FileMasks>*.ppu;*.o;*.dcu</FileMasks>
+        <Color>16711680</Color>
+        <Attributes/>
+      </Filter>
+      <Filter>
+        <Name>Specified Executables</Name>
+        <FileMasks>*</FileMasks>
+        <Color>55758</Color>
+        <Attributes>-rwxrwxr*x</Attributes>
+      </Filter>
+      <Filter>
+        <Name>Executables</Name>
+        <FileMasks>*</FileMasks>
+        <Color>32768</Color>
+        <Attributes>-*x*</Attributes>
+      </Filter>
+    </FileFilters>
+    <Foreground>11442573</Foreground>
+    <Background>4336939</Background>
+    <Background2>4336939</Background2>
+    <Mark>5520579</Mark>
+    <Cursor>8421504</Cursor>
+    <CursorText>16052973</CursorText>
+    <UseInvertedSelection>False</UseInvertedSelection>
+    <InactivePanelBrightness>100</InactivePanelBrightness>
+    <UseFrameCursor>False</UseFrameCursor>
+    <FreeSpaceIndicator>
+      <ForeColor>0</ForeColor>
+      <BackColor>16777215</BackColor>
+      <UseGradient>True</UseGradient>
+    </FreeSpaceIndicator>
+    <UseCursorBorder>False</UseCursorBorder>
+    <CursorBorderColor>-2147483635</CursorBorderColor>
+    <InactiveCursor>-2147483645</InactiveCursor>
+    <InactiveMark>128</InactiveMark>
+    <UseInactiveSelColor>False</UseInactiveSelColor>
+    <AllowOverColor>True</AllowOverColor>
+    <gBorderFrameWidth>1</gBorderFrameWidth>
+    <LogWindow>
+      <Info>8388608</Info>
+      <Error>255</Error>
+      <Success>32768</Success>
+    </LogWindow>
+  </Colors>
+  <Plugins>
+    <WlxPlugins>
+      <WlxPlugin Enabled="True">
+        <Name>wlxMplayer</Name>
+        <Path>%commander_path%/plugins/wlx/wlxmplayer/wlxmplayer.wlx</Path>
+        <DetectString>(EXT="MPG")|(EXT="AVI")|(EXT="MPEG")|(EXT="FLV")</DetectString>
+      </WlxPlugin>
+    </WlxPlugins>
+    <DsxPlugins/>
+    <WcxPlugins>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>zip</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>735</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>bz2</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>91</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>tbz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>95</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>lzma</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>1</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>tlz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>95</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>xz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>91</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>txz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>95</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>zipx</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>223</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>cpio</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/cpio/cpio.wcx</Path>
+        <Flags>4</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>deb</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/deb/deb.wcx</Path>
+        <Flags>4</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>rpm</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/rpm/rpm.wcx</Path>
+        <Flags>4</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>rar</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/unrar/unrar.wcx</Path>
+        <Flags>68</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>jar</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>990</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>tar</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>223</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>gz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>91</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>tgz</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
+        <Flags>95</Flags>
+      </WcxPlugin>
+    </WcxPlugins>
+    <WdxPlugins>
+      <WdxPlugin>
+        <Name>deb_wdx</Name>
+        <Path>%COMMANDER_PATH%/plugins/wdx/deb_wdx/deb_wdx.wdx</Path>
+        <DetectString>EXT="DEB"</DetectString>
+      </WdxPlugin>
+      <WdxPlugin>
+        <Name>rpm_wdx</Name>
+        <Path>%COMMANDER_PATH%/plugins/wdx/rpm_wdx/rpm_wdx.wdx</Path>
+        <DetectString>EXT="RPM"</DetectString>
+      </WdxPlugin>
+      <WdxPlugin>
+        <Name>audioinfo</Name>
+        <Path>%COMMANDER_PATH%/plugins/wdx/audioinfo/audioinfo.wdx</Path>
+        <DetectString>(EXT="MP3") | (EXT="MP2") | (EXT="MP1") | (EXT="OGG") | (EXT="WMA") | (EXT="WAV") | (EXT="VQF") | (EXT="AAC") | (EXT="APE") | (EXT="MPC") | (EXT="FLAC") | (EXT="CDA") | (EXT="TTA") | (EXT="AC3") | (EXT="DTS") | (EXT="WV") | (EXT="WVC") | (EXT="OFR") | (EXT="OFS") | (EXT="M4A") | (EXT="MP4")</DetectString>
+      </WdxPlugin>
+    </WdxPlugins>
+    <WfxPlugins>
+      <WfxPlugin Enabled="True">
+        <Name>FTP</Name>
+        <Path>%commander_path%/plugins/wfx/ftp/ftp.wfx</Path>
+      </WfxPlugin>
+      <WfxPlugin Enabled="True">
+        <Name>Windows Network</Name>
+        <Path>%commander_path%/plugins/wfx/samba/samba.wfx</Path>
+      </WfxPlugin>
+    </WfxPlugins>
+    <TweakPluginWidth0>0</TweakPluginWidth0>
+    <TweakPluginHeight0>0</TweakPluginHeight0>
+    <TweakPluginWidth1>0</TweakPluginWidth1>
+    <TweakPluginHeight1>0</TweakPluginHeight1>
+    <TweakPluginWidth2>0</TweakPluginWidth2>
+    <TweakPluginHeight2>0</TweakPluginHeight2>
+    <TweakPluginWidth3>0</TweakPluginWidth3>
+    <TweakPluginHeight3>0</TweakPluginHeight3>
+    <TweakPluginWidth4>0</TweakPluginWidth4>
+    <TweakPluginHeight4>0</TweakPluginHeight4>
+    <AutoTweak>False</AutoTweak>
+    <WCXConfigViewMode>0</WCXConfigViewMode>
+    <PluginFilenameStyle>0</PluginFilenameStyle>
+    <PluginPathToBeRelativeTo>%COMMANDER_PATH%</PluginPathToBeRelativeTo>
+  </Plugins>
+  <Toolbars>
+    <MainToolbar>
+      <Row>
+        <Command>
+          <ID>{BA011004-EAB0-4138-BA33-D754D46B6958}</ID>
+          <Icon>cm_refresh</Icon>
+          <Command>cm_Refresh</Command>
+        </Command>
+        <Command>
+          <ID>{ECF0FC28-04FC-4CDB-8F0C-902B66C4D684}</ID>
+          <Icon>cm_runterm</Icon>
+          <Command>cm_RunTerm</Command>
+        </Command>
+        <Command>
+          <ID>{748EF89E-A355-4C5B-BFD3-FA53A19FD457}</ID>
+          <Icon>cm_options</Icon>
+          <Command>cm_Options</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{13C981FD-400B-49D0-887B-8449C9006B9C}</ID>
+          <Icon>cm_briefview</Icon>
+          <Command>cm_BriefView</Command>
+        </Command>
+        <Command>
+          <ID>{BF016A43-855D-4808-BBE4-1EE29692336A}</ID>
+          <Icon>cm_columnsview</Icon>
+          <Command>cm_ColumnsView</Command>
+        </Command>
+        <Command>
+          <ID>{A4FF031C-FE25-417D-AAB0-9371B26B3610}</ID>
+          <Icon>cm_thumbnailsview</Icon>
+          <Command>cm_ThumbnailsView</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{A97FD543-8024-405C-A65B-27614DA7BAC4}</ID>
+          <Icon>cm_flatview</Icon>
+          <Command>cm_FlatView</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{94483758-004B-4732-B912-24B046C2A513}</ID>
+          <Icon>cm_viewhistoryprev</Icon>
+          <Command>cm_ViewHistoryPrev</Command>
+        </Command>
+        <Command>
+          <ID>{F4D3F75E-34B5-4ABA-9E9C-6F7F5FC66CF4}</ID>
+          <Icon>cm_viewhistorynext</Icon>
+          <Command>cm_ViewHistoryNext</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{0A3B2553-47CF-4DA3-B76D-28602EC7DA97}</ID>
+          <Icon>cm_markplus</Icon>
+          <Command>cm_MarkPlus</Command>
+        </Command>
+        <Command>
+          <ID>{AD95E4EA-56CA-4C5E-B840-BAD81057D8FD}</ID>
+          <Icon>cm_markminus</Icon>
+          <Command>cm_MarkMinus</Command>
+        </Command>
+        <Command>
+          <ID>{9D0B915E-3F9C-4645-B68F-A6883361898B}</ID>
+          <Icon>cm_markinvert</Icon>
+          <Command>cm_MarkInvert</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{9A0C91C3-551B-462D-A06B-9D7F42D66CFB}</ID>
+          <Icon>cm_packfiles</Icon>
+          <Command>cm_PackFiles</Command>
+        </Command>
+        <Command>
+          <ID>{FE6225E7-B0C5-487B-8C1B-C471D6620535}</ID>
+          <Icon>cm_extractfiles</Icon>
+          <Command>cm_ExtractFiles</Command>
+        </Command>
+        <Separator/>
+        <Command>
+          <ID>{D83FAF85-1037-49B9-820F-72A7B60148FB}</ID>
+          <Icon>cm_search</Icon>
+          <Command>cm_Search</Command>
+        </Command>
+        <Command>
+          <ID>{DDD3F2AD-E5DB-49B4-9EFE-629E85855ABD}</ID>
+          <Icon>cm_multirename</Icon>
+          <Command>cm_MultiRename</Command>
+        </Command>
+        <Command>
+          <ID>{FB62BB1F-C893-49E4-9281-D612243E2DB2}</ID>
+          <Icon>cm_syncdirs</Icon>
+          <Command>cm_SyncDirs</Command>
+        </Command>
+        <Command>
+          <ID>{270C2448-49F6-4389-A46F-B00685ABE361}</ID>
+          <Icon>cm_copyfullnamestoclip</Icon>
+          <Command>cm_CopyFullNamesToClip</Command>
+        </Command>
+      </Row>
+    </MainToolbar>
+  </Toolbars>
+  <Tabs>
+    <OpenedTabs>
+      <Left>
+        <ActiveTab>3</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="">/home/szmktk/</Path>
+                  <Path Filename="b2a43de4-afcd-42b9-b62b-00ce543b1d4e">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="..">/home/szmktk/media-szmktk/b2a43de4-afcd-42b9-b62b-00ce543b1d4e/</Path>
+                  <Path Filename="d5d9a2d9-d993-42b7-a887-0ea407e78e63">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="lgi-rpi_2019-11-20.img.gz">/home/szmktk/media-szmktk/d5d9a2d9-d993-42b7-a887-0ea407e78e63/</Path>
+                  <Path Filename="zi0n">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="Movies">/home/szmktk/media-szmktk/zi0n/</Path>
+                  <Path Filename="..">/home/szmktk/media-szmktk/zi0n/Movies/</Path>
+                  <Path Filename="Movies">/home/szmktk/media-szmktk/zi0n/</Path>
+                  <Path Filename="zi0n">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="media-szmktk">/home/szmktk/</Path>
+                  <Path Filename="zi0n">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="clonezilla">/home/szmktk/media-szmktk/zi0n/</Path>
+                  <Path Filename="pygargus_2021-01-05">/home/szmktk/media-szmktk/zi0n/clonezilla/</Path>
+                  <Path Filename="..">/home/szmktk/media-szmktk/zi0n/clonezilla/pygargus_2021-01-05/</Path>
+                  <Path Filename="pygargus_2021-01-05">/home/szmktk/media-szmktk/zi0n/clonezilla/</Path>
+                  <Path Filename="movie-archive">/home/szmktk/media-szmktk/zi0n/</Path>
+                  <Path Filename="..">/home/szmktk/media-szmktk/zi0n/movie-archive/</Path>
+                  <Path Filename="Movies">/home/szmktk/media-szmktk/zi0n/</Path>
+                  <Path Filename="..">/home/szmktk/media-szmktk/zi0n/Movies/</Path>
+                  <Path Filename="movie-archive">/home/szmktk/media-szmktk/zi0n/</Path>
+                  <Path Filename="..">/home/szmktk/media-szmktk/zi0n/movie-archive/</Path>
+                  <Path Filename="Movies">/home/szmktk/media-szmktk/zi0n/</Path>
+                  <Path Filename="..">/home/szmktk/media-szmktk/zi0n/Movies/</Path>
+                  <Path Filename="Movies">/home/szmktk/media-szmktk/zi0n/</Path>
+                  <Path Filename="End of Watch (2012)">/home/szmktk/media-szmktk/zi0n/Movies/</Path>
+                  <Path Filename="..">/home/szmktk/media-szmktk/zi0n/Movies/End of Watch (2012)/</Path>
+                  <Path Filename="End of Watch (2012)">/home/szmktk/media-szmktk/zi0n/Movies/</Path>
+                  <Path Filename="End.of.Watch.2012.720p.BluRay.x264.YIFY.mp4">/home/szmktk/media-szmktk/zi0n/Movies/End of Watch (2012)/</Path>
+                  <Path Filename="Life.2017.1080p.BluRay.x265-RARBG">/home/szmktk/media-szmktk/zi0n/Movies/</Path>
+                  <Path Filename="Life.2017.1080p.BluRay.x265-RARBG.mp4">/home/szmktk/media-szmktk/zi0n/Movies/Life.2017.1080p.BluRay.x265-RARBG/</Path>
+                  <Path Filename="Jacobs Ladder (1990)">/home/szmktk/media-szmktk/zi0n/Movies/</Path>
+                  <Path Filename="">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/media-szmktk/</Path>
+                  <Path Filename="">/home/szmktk/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/media-szmktk/</LockPath>
+          <Title>media-szmktk</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename=".thunderbird">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/.thunderbird/</Path>
+                  <Path Filename=".thunderbird">/home/szyms/</Path>
+                  <Path Filename="Profiles">/home/szyms/.thunderbird/</Path>
+                  <Path Filename="7q3yexv4.default-release">/home/szyms/.thunderbird/Profiles/</Path>
+                  <Path Filename="ImapMail">/home/szyms/.thunderbird/Profiles/7q3yexv4.default-release/</Path>
+                  <Path Filename="..">/home/szyms/.thunderbird/Profiles/7q3yexv4.default-release/ImapMail/</Path>
+                  <Path Filename="ImapMail">/home/szyms/.thunderbird/Profiles/7q3yexv4.default-release/</Path>
+                  <Path Filename="7q3yexv4.default-release">/home/szyms/.thunderbird/Profiles/</Path>
+                  <Path Filename="Profiles">/home/szyms/.thunderbird/</Path>
+                  <Path Filename="7q3yexv4.default-release">/home/szyms/.thunderbird/Profiles/</Path>
+                  <Path Filename="ImapMail">/home/szyms/.thunderbird/Profiles/7q3yexv4.default-release/</Path>
+                  <Path Filename="..">/home/szyms/.thunderbird/Profiles/7q3yexv4.default-release/ImapMail/</Path>
+                  <Path Filename="ImapMail">/home/szyms/.thunderbird/Profiles/7q3yexv4.default-release/</Path>
+                  <Path Filename="7q3yexv4.default-release">/home/szyms/.thunderbird/Profiles/</Path>
+                  <Path Filename="..">/home/szyms/.thunderbird/</Path>
+                  <Path Filename="nna">/home/szyms/Downloads/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/nna/</Path>
+                  <Path Filename="lineageos-17">/home/szyms/Downloads/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/lineageos-17/</Path>
+                  <Path Filename="lineageos-17">/home/szyms/Downloads/</Path>
+                  <Path Filename="screenshots">/home/szyms/Downloads/lineageos-17/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/lineageos-17/screenshots/</Path>
+                  <Path Filename="screenshots">/home/szyms/Downloads/lineageos-17/</Path>
+                  <Path Filename="e-bullhead">/home/szyms/Downloads/</Path>
+                  <Path Filename="twrp-3.4.0-0-bullhead.img">/home/szyms/Downloads/e-bullhead/</Path>
+                  <Path Filename="e-bullhead">/home/szyms/Downloads/</Path>
+                  <Path Filename="twrp-3.4.0-0-bullhead.img">/home/szyms/Downloads/e-bullhead/</Path>
+                  <Path Filename="e-bullhead">/home/szyms/Downloads/</Path>
+                  <Path Filename="twrp-3.4.0-0-bullhead.img">/home/szyms/Downloads/e-bullhead/</Path>
+                  <Path Filename="mikrotik-tblk">/home/szyms/Downloads/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/mikrotik-tblk/</Path>
+                  <Path Filename="my_spotify_data">/home/szyms/Downloads/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/my_spotify_data/</Path>
+                  <Path Filename="my_spotify_data">/home/szyms/Downloads/</Path>
+                  <Path Filename="Payments.json">/home/szyms/Downloads/my_spotify_data/</Path>
+                  <Path Filename="sm-mbpro">/home/szyms/Downloads/</Path>
+                  <Path Filename="workspace_2020-12-21.tgz">/home/szyms/Downloads/sm-mbpro/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/</Path>
+                  <Path Filename="Downloads">/home/szyms/</Path>
+                  <Path Filename="szyms">/home/</Path>
+                  <Path Filename="mnt">/</Path>
+                  <Path Filename="guest">/mnt/</Path>
+                  <Path Filename="home">/mnt/guest/</Path>
+                  <Path Filename="szyms">/mnt/guest/home/</Path>
+                  <Path Filename="enc-pmo.sh">/mnt/guest/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/</Path>
+                  <Path Filename="szmktk">/home/</Path>
+                  <Path Filename="Desktop">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/Desktop/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Desktop/</LockPath>
+          <Title>Desktop</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="pmo">/home/szmktk/Sync/CODE/conf/linkpocket-docker-containers/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/CODE/conf/linkpocket-docker-containers/pmo/</Path>
+                  <Path Filename="pmo">/home/szmktk/Sync/CODE/conf/linkpocket-docker-containers/</Path>
+                  <Path Filename="CODE">/home/szmktk/Sync/</Path>
+                  <Path Filename="conf">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="linkpocket-docker-containers">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="jupyter">/home/szmktk/Sync/CODE/conf/linkpocket-docker-containers/</Path>
+                  <Path Filename="jovyan-homedir_2021-01-24.tgz">/home/szmktk/Sync/CODE/conf/linkpocket-docker-containers/jupyter/</Path>
+                  <Path Filename="jupyter">/home/szmktk/Sync/CODE/conf/linkpocket-docker-containers/</Path>
+                  <Path Filename="linkpocket-docker-containers">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="CODE">/home/szmktk/Sync/</Path>
+                  <Path Filename="conf">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="linkpocket-docker-containers">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="jupyter">/home/szmktk/Sync/CODE/conf/linkpocket-docker-containers/</Path>
+                  <Path Filename="jovyan-homedir_2021-01-24.tgz">/home/szmktk/Sync/CODE/conf/linkpocket-docker-containers/jupyter/</Path>
+                  <Path Filename="jupyter">/home/szmktk/Sync/CODE/conf/linkpocket-docker-containers/</Path>
+                  <Path Filename="linkpocket-docker-containers">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="conf">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="pic">/home/szmktk/Sync/</Path>
+                  <Path Filename="ytwl-exercise.png">/home/szmktk/Sync/pic/</Path>
+                  <Path Filename="CODE">/home/szmktk/Sync/</Path>
+                  <Path Filename="conf">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="i3-wm">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="i3">/home/szmktk/Sync/CODE/conf/i3-wm/</Path>
+                  <Path Filename="pygargus">/home/szmktk/Sync/CODE/conf/i3-wm/i3/</Path>
+                  <Path Filename="config_2021-01-17_i3.bak">/home/szmktk/Sync/CODE/conf/i3-wm/i3/pygargus/</Path>
+                  <Path Filename="pic">/home/szmktk/Sync/</Path>
+                  <Path Filename="ikigai.png">/home/szmktk/Sync/pic/</Path>
+                  <Path Filename="CODE">/home/szmktk/Sync/</Path>
+                  <Path Filename="hacks">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="script-template.sh">/home/szmktk/Sync/CODE/hacks/</Path>
+                  <Path Filename="cheatsheet">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/CODE/cheatsheet/</Path>
+                  <Path Filename="backup">/home/szmktk/Sync/</Path>
+                  <Path Filename="personal">/home/szmktk/Sync/backup/</Path>
+                  <Path Filename="tmp">/home/szmktk/Sync/backup/personal/</Path>
+                  <Path Filename="my_spotify_data.zip">/home/szmktk/Sync/backup/personal/tmp/</Path>
+                  <Path Filename="CODE">/home/szmktk/Sync/</Path>
+                  <Path Filename="conf">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="shell">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="zsh">/home/szmktk/Sync/CODE/conf/shell/</Path>
+                  <Path Filename="pygargus">/home/szmktk/Sync/CODE/conf/shell/zsh/</Path>
+                  <Path Filename=".zshrc_2021-01-17">/home/szmktk/Sync/CODE/conf/shell/zsh/pygargus/</Path>
+                  <Path Filename="mimir">/home/szmktk/Sync/CODE/conf/shell/zsh/</Path>
+                  <Path Filename=".zshrc_2020-08-16">/home/szmktk/Sync/CODE/conf/shell/zsh/mimir/</Path>
+                  <Path Filename="sm-mbpro">/home/szmktk/Sync/CODE/conf/shell/zsh/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/CODE/conf/shell/zsh/sm-mbpro/</Path>
+                  <Path Filename="pygargus">/home/szmktk/Sync/CODE/conf/shell/zsh/</Path>
+                  <Path Filename=".p10k.zsh">/home/szmktk/Sync/CODE/conf/shell/zsh/pygargus/</Path>
+                  <Path Filename="">/home/szmktk/Sync/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Sync/</LockPath>
+          <Title>Sync</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/szmktk/.ssh/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/</Path>
+                  <Path Filename=".config">/home/szmktk/</Path>
+                  <Path Filename="fontconfig">/home/szmktk/.config/</Path>
+                  <Path Filename="conf.d">/home/szmktk/.config/fontconfig/</Path>
+                  <Path Filename="..">/home/szmktk/.config/fontconfig/conf.d/</Path>
+                  <Path Filename="PGS-Software_EB_Presentation_Nowy pracownik.pptx">/home/szmktk/Downloads/</Path>
+                  <Path Filename="Downloads">/home/szmktk/</Path>
+                  <Path Filename="tmp">/home/szmktk/Downloads/</Path>
+                  <Path Filename="display-scripts">/home/szmktk/Downloads/tmp/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/tmp/display-scripts/</Path>
+                  <Path Filename="mic-test-jabra-wired.mp3">/home/szmktk/Downloads/tmp/</Path>
+                  <Path Filename="eKRK-answer">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/eKRK-answer/</Path>
+                  <Path Filename="movie-archive">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/movie-archive/</Path>
+                  <Path Filename="vscodium-mimir">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/vscodium-mimir/</Path>
+                  <Path Filename="movie-archive">/home/szmktk/Downloads/</Path>
+                  <Path Filename="Chasing the Present.mp4">/home/szmktk/Downloads/movie-archive/</Path>
+                  <Path Filename="eKRK-answer">/home/szmktk/Downloads/</Path>
+                  <Path Filename="krk-szymon-mikitiuk-pgs">/home/szmktk/Downloads/eKRK-answer/</Path>
+                  <Path Filename="krk-smikitiuk.pdf">/home/szmktk/Downloads/eKRK-answer/krk-szymon-mikitiuk-pgs/</Path>
+                  <Path Filename="krk-szymon-mikitiuk-pgs">/home/szmktk/Downloads/eKRK-answer/</Path>
+                  <Path Filename="downloads-mimir">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="downloads-mimir">/home/szmktk/Downloads/</Path>
+                  <Path Filename=".mailz-homepl">/home/szmktk/</Path>
+                  <Path Filename="jupyter-bak">/home/szmktk/Downloads/</Path>
+                  <Path Filename="mountdir">/home/szmktk/Downloads/jupyter-bak/</Path>
+                  <Path Filename=".ipynb_checkpoints">/home/szmktk/Downloads/jupyter-bak/mountdir/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/jupyter-bak/mountdir/.ipynb_checkpoints/</Path>
+                  <Path Filename="default.ipynb">/home/szmktk/Downloads/jupyter-bak/mountdir/</Path>
+                  <Path Filename="eKRK-answer">/home/szmktk/Downloads/</Path>
+                  <Path Filename="krk-szymon-mikitiuk-pgs">/home/szmktk/Downloads/eKRK-answer/</Path>
+                  <Path Filename="smikitiuk_Oświadczenie_DCG.pdf">/home/szmktk/Downloads/eKRK-answer/krk-szymon-mikitiuk-pgs/</Path>
+                  <Path Filename="2572284.pdf">/home/szmktk/Downloads/eKRK-answer/</Path>
+                  <Path Filename="downloads-mimir">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="changed">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/changed/</Path>
+                  <Path Filename="changed">/home/szmktk/Downloads/</Path>
+                  <Path Filename="operation_register_no_pep_fields.json">/home/szmktk/Downloads/changed/</Path>
+                  <Path Filename="vpn-docs">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="jupyter-cert">/home/szmktk/Downloads/</Path>
+                  <Path Filename="cert.pem">/home/szmktk/Downloads/jupyter-cert/</Path>
+                  <Path Filename="jupyter-cert">/home/szmktk/Downloads/</Path>
+                  <Path Filename="cert.pem">/home/szmktk/Downloads/jupyter-cert/</Path>
+                  <Path Filename="doublecmd.xml">/home/szmktk/Downloads/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Downloads/</LockPath>
+          <Title>Downloads</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="VSCodium">/home/szmktk/.config/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="VSCodium">/home/szmktk/.config/</Path>
+                  <Path Filename=".config">/home/szmktk/</Path>
+                  <Path Filename="VSCodium">/home/szmktk/.config/</Path>
+                  <Path Filename="CachedExtensionVSIXs">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="bringout.pdf-view-2.2.2">/home/szmktk/.config/VSCodium/CachedExtensionVSIXs/</Path>
+                  <Path Filename="CachedExtensions">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="builtin">/home/szmktk/.config/VSCodium/CachedExtensions/</Path>
+                  <Path Filename="CachedData">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/CachedData/</Path>
+                  <Path Filename="Cache">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/Cache/</Path>
+                  <Path Filename="Cache">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="index-dir">/home/szmktk/.config/VSCodium/Cache/</Path>
+                  <Path Filename="the-real-index">/home/szmktk/.config/VSCodium/Cache/index-dir/</Path>
+                  <Path Filename="index-dir">/home/szmktk/.config/VSCodium/Cache/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/Cache/index-dir/</Path>
+                  <Path Filename="index-dir">/home/szmktk/.config/VSCodium/Cache/</Path>
+                  <Path Filename="CachedExtensionVSIXs">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/CachedExtensionVSIXs/</Path>
+                  <Path Filename="CachedExtensions">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/CachedExtensions/</Path>
+                  <Path Filename="CachedData">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="91899dcef7b8110878ea59626991a18c8a6a1b3e">/home/szmktk/.config/VSCodium/CachedData/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/CachedData/91899dcef7b8110878ea59626991a18c8a6a1b3e/</Path>
+                  <Path Filename="91899dcef7b8110878ea59626991a18c8a6a1b3e">/home/szmktk/.config/VSCodium/CachedData/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/CachedData/91899dcef7b8110878ea59626991a18c8a6a1b3e/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/CachedData/</Path>
+                  <Path Filename="Cache">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/Cache/</Path>
+                  <Path Filename="blob_storage">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="efc853c5-befd-4a4c-ba32-408521a16fad">/home/szmktk/.config/VSCodium/blob_storage/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/blob_storage/efc853c5-befd-4a4c-ba32-408521a16fad/</Path>
+                  <Path Filename="efc853c5-befd-4a4c-ba32-408521a16fad">/home/szmktk/.config/VSCodium/blob_storage/</Path>
+                  <Path Filename="Backups">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/Backups/</Path>
+                  <Path Filename="GPUCache">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/GPUCache/</Path>
+                  <Path Filename="Session Storage">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/Session Storage/</Path>
+                  <Path Filename="Workspaces">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/Workspaces/</Path>
+                  <Path Filename="User">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="keybindings.json">/home/szmktk/.config/VSCodium/User/</Path>
+                  <Path Filename="blob_storage">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="..">/home/szmktk/.config/VSCodium/blob_storage/</Path>
+                  <Path Filename="User">/home/szmktk/.config/VSCodium/</Path>
+                  <Path Filename="keybindings.json">/home/szmktk/.config/VSCodium/User/</Path>
+                  <Path Filename="">/home/szmktk/Documents/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Documents/</LockPath>
+          <Title>Documents</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/szyms/.thunderbird/</Path>
+                  <Path Filename="nna">/home/szyms/Downloads/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/nna/</Path>
+                  <Path Filename="lineageos-17">/home/szyms/Downloads/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/lineageos-17/</Path>
+                  <Path Filename="lineageos-17">/home/szyms/Downloads/</Path>
+                  <Path Filename="screenshots">/home/szyms/Downloads/lineageos-17/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/lineageos-17/screenshots/</Path>
+                  <Path Filename="screenshots">/home/szyms/Downloads/lineageos-17/</Path>
+                  <Path Filename="e-bullhead">/home/szyms/Downloads/</Path>
+                  <Path Filename="twrp-3.4.0-0-bullhead.img">/home/szyms/Downloads/e-bullhead/</Path>
+                  <Path Filename="e-bullhead">/home/szyms/Downloads/</Path>
+                  <Path Filename="twrp-3.4.0-0-bullhead.img">/home/szyms/Downloads/e-bullhead/</Path>
+                  <Path Filename="e-bullhead">/home/szyms/Downloads/</Path>
+                  <Path Filename="twrp-3.4.0-0-bullhead.img">/home/szyms/Downloads/e-bullhead/</Path>
+                  <Path Filename="mikrotik-tblk">/home/szyms/Downloads/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/mikrotik-tblk/</Path>
+                  <Path Filename="my_spotify_data">/home/szyms/Downloads/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/my_spotify_data/</Path>
+                  <Path Filename="my_spotify_data">/home/szyms/Downloads/</Path>
+                  <Path Filename="Payments.json">/home/szyms/Downloads/my_spotify_data/</Path>
+                  <Path Filename="sm-mbpro">/home/szyms/Downloads/</Path>
+                  <Path Filename="workspace_2020-12-21.tgz">/home/szyms/Downloads/sm-mbpro/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/</Path>
+                  <Path Filename="Downloads">/home/szyms/</Path>
+                  <Path Filename="szyms">/home/</Path>
+                  <Path Filename="mnt">/</Path>
+                  <Path Filename="guest">/mnt/</Path>
+                  <Path Filename="home">/mnt/guest/</Path>
+                  <Path Filename="szyms">/mnt/guest/home/</Path>
+                  <Path Filename="enc-pmo.sh">/mnt/guest/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Downloads/</Path>
+                  <Path Filename="szmktk">/home/</Path>
+                  <Path Filename="Downloads">/home/szmktk/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/</Path>
+                  <Path Filename="workspace">/home/szmktk/</Path>
+                  <Path Filename="trust-payments">/home/szmktk/workspace/</Path>
+                  <Path Filename="smok">/home/szmktk/workspace/trust-payments/</Path>
+                  <Path Filename="rules-manager-local">/home/szmktk/workspace/trust-payments/smok/</Path>
+                  <Path Filename="..">/home/szmktk/workspace/trust-payments/smok/rules-manager-local/</Path>
+                  <Path Filename="liberty">/home/szmktk/workspace/</Path>
+                  <Path Filename="selene">/home/szmktk/workspace/liberty/</Path>
+                  <Path Filename="dss">/home/szmktk/workspace/liberty/selene/</Path>
+                  <Path Filename="..">/home/szmktk/workspace/liberty/selene/dss/</Path>
+                  <Path Filename="dss">/home/szmktk/workspace/liberty/selene/</Path>
+                  <Path Filename="selene">/home/szmktk/workspace/liberty/</Path>
+                  <Path Filename="liberty">/home/szmktk/workspace/</Path>
+                  <Path Filename="obo">/home/szmktk/workspace/liberty/</Path>
+                  <Path Filename="..">/home/szmktk/workspace/liberty/obo/</Path>
+                  <Path Filename="">/home/szmktk/workspace/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/workspace/</LockPath>
+          <Title>workspace</Title>
+        </Tab>
+      </Left>
+      <Right>
+        <ActiveTab>3</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="cphile">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/cphile/</Path>
+                  <Path Filename="cphile">/home/szyms/Videos/</Path>
+                  <Path Filename="Cookie Stealing - Computerphile-T1QEs3mdJoc.mp4">/home/szyms/Videos/cphile/</Path>
+                  <Path Filename="cphile">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/cphile/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="JNDI">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="JNDI">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="Enterprise Java Beans - Introduction-3YwSY8joz20.mp4">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="">/home/szyms/Videos/</Path>
+                  <Path Filename="szmktk">/home/</Path>
+                  <Path Filename="Desktop">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/Desktop/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Desktop/</LockPath>
+          <Title>Desktop</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="JNDI">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="Enterprise Java Beans - Introduction-3YwSY8joz20.mp4">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="">/home/szyms/Videos/</Path>
+                  <Path Filename="szmktk">/home/</Path>
+                  <Path Filename="sync">/home/szmktk/</Path>
+                  <Path Filename="..">/home/szmktk/sync/</Path>
+                  <Path Filename="Sync">/home/szmktk/</Path>
+                  <Path Filename="backup">/home/szmktk/Sync/</Path>
+                  <Path Filename="personal">/home/szmktk/Sync/backup/</Path>
+                  <Path Filename="CODE">/home/szmktk/Sync/</Path>
+                  <Path Filename="conf">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="i3">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="config_rofi_legacy">/home/szmktk/Sync/CODE/conf/i3/</Path>
+                  <Path Filename="CODE">/home/szmktk/Sync/</Path>
+                  <Path Filename="conf">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="CODE">/home/szmktk/Sync/</Path>
+                  <Path Filename="conf">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="shell">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="aliases">/home/szmktk/Sync/CODE/conf/shell/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/CODE/conf/shell/aliases/</Path>
+                  <Path Filename="zsh">/home/szmktk/Sync/CODE/conf/shell/</Path>
+                  <Path Filename="sm-mbpro">/home/szmktk/Sync/CODE/conf/shell/zsh/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/CODE/conf/shell/zsh/sm-mbpro/</Path>
+                  <Path Filename="mimir">/home/szmktk/Sync/CODE/conf/shell/zsh/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/CODE/conf/shell/zsh/mimir/</Path>
+                  <Path Filename="mimir">/home/szmktk/Sync/CODE/conf/shell/zsh/</Path>
+                  <Path Filename="CODE">/home/szmktk/Sync/</Path>
+                  <Path Filename="conf">/home/szmktk/Sync/CODE/</Path>
+                  <Path Filename="i3-wm">/home/szmktk/Sync/CODE/conf/</Path>
+                  <Path Filename="desktop-apps">/home/szmktk/Sync/CODE/conf/i3-wm/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/CODE/conf/i3-wm/desktop-apps/</Path>
+                  <Path Filename="legacy_config">/home/szmktk/Sync/CODE/conf/i3-wm/</Path>
+                  <Path Filename="">/home/szmktk/Sync/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Sync/</LockPath>
+          <Title>Sync</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Faktura Art-Soft 2017-05.pdf">/home/szmktk/Sync/backup/personal/enterprise/REV/artsoft/2017/</Path>
+                  <Path Filename="enterprise">/home/szmktk/Sync/backup/personal/</Path>
+                  <Path Filename="REV">/home/szmktk/Sync/backup/personal/enterprise/</Path>
+                  <Path Filename="pgs">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2021">/home/szmktk/Sync/backup/personal/enterprise/REV/pgs/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/backup/personal/enterprise/REV/pgs/2021/</Path>
+                  <Path Filename="2021">/home/szmktk/Sync/backup/personal/enterprise/REV/pgs/</Path>
+                  <Path Filename="olosoft">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2017">/home/szmktk/Sync/backup/personal/enterprise/REV/olosoft/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/backup/personal/enterprise/REV/olosoft/2017/</Path>
+                  <Path Filename="2016">/home/szmktk/Sync/backup/personal/enterprise/REV/olosoft/</Path>
+                  <Path Filename="Faktura Olosoft 2016-02.pdf">/home/szmktk/Sync/backup/personal/enterprise/REV/olosoft/2016/</Path>
+                  <Path Filename="2016">/home/szmktk/Sync/backup/personal/enterprise/REV/olosoft/</Path>
+                  <Path Filename="merapar">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2018">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/2018/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/</Path>
+                  <Path Filename="esotiq">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2015">/home/szmktk/Sync/backup/personal/enterprise/REV/esotiq/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/backup/personal/enterprise/REV/esotiq/2015/</Path>
+                  <Path Filename="2015">/home/szmktk/Sync/backup/personal/enterprise/REV/esotiq/</Path>
+                  <Path Filename="artsoft">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2015">/home/szmktk/Sync/backup/personal/enterprise/REV/artsoft/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/backup/personal/enterprise/REV/artsoft/2015/</Path>
+                  <Path Filename="2015">/home/szmktk/Sync/backup/personal/enterprise/REV/artsoft/</Path>
+                  <Path Filename="esotiq">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2016">/home/szmktk/Sync/backup/personal/enterprise/REV/esotiq/</Path>
+                  <Path Filename="Faktura Esotiq 2016-12.pdf">/home/szmktk/Sync/backup/personal/enterprise/REV/esotiq/2016/</Path>
+                  <Path Filename="2016">/home/szmktk/Sync/backup/personal/enterprise/REV/esotiq/</Path>
+                  <Path Filename="merapar">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2020">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/2020/</Path>
+                  <Path Filename="2020">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/</Path>
+                  <Path Filename="merapar">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2018">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/2018/</Path>
+                  <Path Filename="2018">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/</Path>
+                  <Path Filename="esotiq">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2017">/home/szmktk/Sync/backup/personal/enterprise/REV/esotiq/</Path>
+                  <Path Filename="Faktura Esotiq 2017-05.pdf">/home/szmktk/Sync/backup/personal/enterprise/REV/esotiq/2017/</Path>
+                  <Path Filename="2017">/home/szmktk/Sync/backup/personal/enterprise/REV/esotiq/</Path>
+                  <Path Filename="merapar">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2020">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/</Path>
+                  <Path Filename="merapar_remuneration_2020_04.pdf">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/2020/</Path>
+                  <Path Filename="2020">/home/szmktk/Sync/backup/personal/enterprise/REV/merapar/</Path>
+                  <Path Filename="pgs">/home/szmktk/Sync/backup/personal/enterprise/REV/</Path>
+                  <Path Filename="2021">/home/szmktk/Sync/backup/personal/enterprise/REV/pgs/</Path>
+                  <Path Filename="..">/home/szmktk/Sync/backup/personal/enterprise/REV/pgs/2021/</Path>
+                  <Path Filename="2021">/home/szmktk/Sync/backup/personal/enterprise/REV/pgs/</Path>
+                  <Path Filename="">/home/szmktk/Sync/backup/personal/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Sync/backup/personal/</LockPath>
+          <Title>personal</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="errors">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/vpn-docs/errors/</Path>
+                  <Path Filename="configs">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="auth.cfg.unknown">/home/szmktk/Downloads/vpn-docs/configs/</Path>
+                  <Path Filename="configs">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="tmp">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/tmp/</Path>
+                  <Path Filename="downloads-mimir">/home/szmktk/Downloads/</Path>
+                  <Path Filename="courses-certs">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/downloads-mimir/courses-certs/</Path>
+                  <Path Filename="csv">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/downloads-mimir/csv/</Path>
+                  <Path Filename="my_spotify_data">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/downloads-mimir/my_spotify_data/</Path>
+                  <Path Filename="my_spotify_data">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/downloads-mimir/my_spotify_data/</Path>
+                  <Path Filename="pmodb">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="db.json">/home/szmktk/Downloads/downloads-mimir/pmodb/</Path>
+                  <Path Filename="energa_faktury">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/downloads-mimir/energa_faktury/</Path>
+                  <Path Filename="charge.ods">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="downloads-mimir">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="downloads-mimir">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/downloads-mimir/</Path>
+                  <Path Filename="vpn-docs">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="vpn-docs">/home/szmktk/Downloads/</Path>
+                  <Path Filename="configs">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="auth.cfg.unknown">/home/szmktk/Downloads/vpn-docs/configs/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/</Path>
+                  <Path Filename=".fac.yml">/home/szmktk/</Path>
+                  <Path Filename="vpn-docs">/home/szmktk/Downloads/</Path>
+                  <Path Filename="configs">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="auth.cfg.unknown">/home/szmktk/Downloads/vpn-docs/configs/</Path>
+                  <Path Filename="vpn-docs">/home/szmktk/Downloads/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="vpn-docs">/home/szmktk/Downloads/</Path>
+                  <Path Filename="errors">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/vpn-docs/errors/</Path>
+                  <Path Filename="docs">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="vpn-docs">/home/szmktk/Downloads/</Path>
+                  <Path Filename="docs">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/vpn-docs/docs/</Path>
+                  <Path Filename="configs">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/vpn-docs/configs/</Path>
+                  <Path Filename="configs">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="..">/home/szmktk/Downloads/vpn-docs/configs/</Path>
+                  <Path Filename="docs">/home/szmktk/Downloads/vpn-docs/</Path>
+                  <Path Filename="run-e2e-test-locally-draft.md">/home/szmktk/Downloads/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Downloads/</LockPath>
+          <Title>Downloads</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="cphile">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/cphile/</Path>
+                  <Path Filename="cphile">/home/szyms/Videos/</Path>
+                  <Path Filename="Cookie Stealing - Computerphile-T1QEs3mdJoc.mp4">/home/szyms/Videos/cphile/</Path>
+                  <Path Filename="cphile">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/cphile/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="JNDI">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="JNDI">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="Enterprise Java Beans - Introduction-3YwSY8joz20.mp4">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="">/home/szyms/Videos/</Path>
+                  <Path Filename="szmktk">/home/</Path>
+                  <Path Filename="Documents">/home/szmktk/</Path>
+                  <Path Filename="keepass-tmp">/home/szmktk/Documents/</Path>
+                  <Path Filename="..">/home/szmktk/Documents/keepass-tmp/</Path>
+                  <Path Filename="">/home/szmktk/Documents/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Documents/</LockPath>
+          <Title>Documents</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="Enterprise Java Beans - Introduction-3YwSY8joz20.mp4">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="">/home/szyms/Videos/</Path>
+                  <Path Filename="szmktk">/home/</Path>
+                  <Path Filename="Pictures">/home/szmktk/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="screenshot.11.jpg">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="screenshot.11.jpg">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="Pictures">/home/szmktk/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="..">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename=".xsession-errors">/home/szmktk/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="20210114_223130.png">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="..">/home/szmktk/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="20210114_223021.png">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="20210117_112151.png">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="20210115_085706.png">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="wall">/home/szmktk/Pictures/</Path>
+                  <Path Filename="kernel-heart.png">/home/szmktk/Pictures/wall/</Path>
+                  <Path Filename="wall">/home/szmktk/Pictures/</Path>
+                  <Path Filename="Pictures">/home/szmktk/</Path>
+                  <Path Filename="wall">/home/szmktk/Pictures/</Path>
+                  <Path Filename="kernel-heart.png">/home/szmktk/Pictures/wall/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="20210115_093327.png">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="wall">/home/szmktk/Pictures/</Path>
+                  <Path Filename="bright-blue.png">/home/szmktk/Pictures/wall/</Path>
+                  <Path Filename="wall">/home/szmktk/Pictures/</Path>
+                  <Path Filename="bright-blue.png">/home/szmktk/Pictures/wall/</Path>
+                  <Path Filename="">/home/szmktk/Pictures/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Pictures/</LockPath>
+          <Title>Pictures</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="cphile">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/cphile/</Path>
+                  <Path Filename="cphile">/home/szyms/Videos/</Path>
+                  <Path Filename="Cookie Stealing - Computerphile-T1QEs3mdJoc.mp4">/home/szyms/Videos/cphile/</Path>
+                  <Path Filename="cphile">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/cphile/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="JNDI">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="JNDI">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="Enterprise Java Beans - Introduction-3YwSY8joz20.mp4">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="">/home/szyms/Videos/</Path>
+                  <Path Filename="szmktk">/home/</Path>
+                  <Path Filename="Videos">/home/szmktk/</Path>
+                  <Path Filename="">/home/szmktk/Videos/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+          <Options>2</Options>
+          <LockPath>/home/szmktk/Videos/</LockPath>
+          <Title>Videos</Title>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="JNDI">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/jenkins/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="JNDI">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JNDI/</Path>
+                  <Path Filename="js30">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/js30/</Path>
+                  <Path Filename="EJB">/home/szyms/Videos/</Path>
+                  <Path Filename="Enterprise Java Beans - Introduction-3YwSY8joz20.mp4">/home/szyms/Videos/EJB/</Path>
+                  <Path Filename="JMS">/home/szyms/Videos/</Path>
+                  <Path Filename="..">/home/szyms/Videos/JMS/</Path>
+                  <Path Filename="jenkins">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="..">/home/szyms/Videos/</Path>
+                  <Path Filename="Videos">/home/szyms/</Path>
+                  <Path Filename="">/home/szyms/Videos/</Path>
+                  <Path Filename="szmktk">/home/</Path>
+                  <Path Filename="Pictures">/home/szmktk/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="screenshot.11.jpg">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="screenshot.11.jpg">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="Pictures">/home/szmktk/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="..">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename=".xsession-errors">/home/szmktk/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="20210114_223130.png">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="..">/home/szmktk/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="20210114_223021.png">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="20210117_112151.png">/home/szmktk/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/szmktk/Pictures/</Path>
+                  <Path Filename="">/home/szmktk/Pictures/Screenshots/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+      </Right>
+    </OpenedTabs>
+    <Options>49937</Options>
+    <CharacterLimit>32</CharacterLimit>
+    <Position>0</Position>
+    <ActionOnDoubleClick>1</ActionOnDoubleClick>
+  </Tabs>
+  <MainWindow>
+    <Position Save="True">
+      <Maximized>False</Maximized>
+      <Splitter>49.8695878977569</Splitter>
+      <Left>0</Left>
+      <Top>1100</Top>
+      <Width>1920</Width>
+      <Height>1039</Height>
+      <PixelsPerInch>96</PixelsPerInch>
+    </Position>
+  </MainWindow>
+  <Language>
+    <POFileName>doublecmd.en.po</POFileName>
+  </Language>
+  <Behaviours>
+    <GoToRoot>False</GoToRoot>
+    <ActiveRight>False</ActiveRight>
+    <RunInTerminalStayOpenCmd>mate-terminal</RunInTerminalStayOpenCmd>
+    <RunInTerminalStayOpenParams>-e sh -c '{command}; echo -n Press ENTER to exit... ; read a'</RunInTerminalStayOpenParams>
+    <RunInTerminalCloseCmd>mate-terminal</RunInTerminalCloseCmd>
+    <RunInTerminalCloseParams>-e sh -c '{command}'</RunInTerminalCloseParams>
+    <JustRunTerminal>mate-terminal</JustRunTerminal>
+    <JustRunTermParams/>
+    <OnlyOneAppInstance>False</OnlyOneAppInstance>
+    <LynxLike>True</LynxLike>
+    <FileSizeFormat>0</FileSizeFormat>
+    <OperationSizeFormat>0</OperationSizeFormat>
+    <HeaderFooterSizeFormat>0</HeaderFooterSizeFormat>
+    <FileSizeDigits>1</FileSizeDigits>
+    <HeaderFooterDigits>1</HeaderFooterDigits>
+    <OperationSizeDigits>1</OperationSizeDigits>
+    <PersonalizedByte>B</PersonalizedByte>
+    <PersonalizedKilo>KB</PersonalizedKilo>
+    <PersonalizedMega>MB</PersonalizedMega>
+    <PersonalizedGiga>GB</PersonalizedGiga>
+    <PersonalizedTera>TB</PersonalizedTera>
+    <MinimizeToTray>False</MinimizeToTray>
+    <AlwaysShowTrayIcon>False</AlwaysShowTrayIcon>
+    <Mouse>
+      <Selection Enabled="True">
+        <Button>0</Button>
+        <IconClick>0</IconClick>
+      </Selection>
+      <SingleClickStart>0</SingleClickStart>
+      <ScrollMode>1</ScrollMode>
+      <WheelScrollLines>3</WheelScrollLines>
+    </Mouse>
+    <AutoFillColumns>True</AutoFillColumns>
+    <AutoSizeColumn>0</AutoSizeColumn>
+    <CustomColumnsChangeAllColumns>False</CustomColumnsChangeAllColumns>
+    <BriefViewFileExtAligned>False</BriefViewFileExtAligned>
+    <DateTimeFormat>mm/dd/yy hh:nn:ss</DateTimeFormat>
+    <CutTextToColumnWidth>True</CutTextToColumnWidth>
+    <ExtendCellWidth>False</ExtendCellWidth>
+    <ShowSystemFiles>True</ShowSystemFiles>
+    <ListFilesInThread>True</ListFilesInThread>
+    <LoadIconsSeparately>True</LoadIconsSeparately>
+    <DelayLoadingTabs>True</DelayLoadingTabs>
+    <HighlightUpdatedFiles>True</HighlightUpdatedFiles>
+    <DriveBlackList/>
+    <DriveBlackListUnmounted>False</DriveBlackListUnmounted>
+  </Behaviours>
+  <Tools>
+    <Viewer Enabled="False">
+      <Path/>
+      <Parameters/>
+      <RunInTerminal>False</RunInTerminal>
+      <KeepTerminalOpen>False</KeepTerminalOpen>
+    </Viewer>
+    <Editor Enabled="True">
+      <Path>/usr/sbin/geany</Path>
+      <Parameters/>
+      <RunInTerminal>False</RunInTerminal>
+      <KeepTerminalOpen>False</KeepTerminalOpen>
+    </Editor>
+    <Differ Enabled="False">
+      <Path/>
+      <Parameters/>
+      <RunInTerminal>False</RunInTerminal>
+      <KeepTerminalOpen>False</KeepTerminalOpen>
+      <FramePosAfterComp>0</FramePosAfterComp>
+    </Differ>
+  </Tools>
+  <Fonts>
+    <Main>
+      <Name>default</Name>
+      <Size>10</Size>
+      <Style>1</Style>
+      <Quality>0</Quality>
+    </Main>
+    <Editor>
+      <Name>Monospace</Name>
+      <Size>14</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </Editor>
+    <Viewer>
+      <Name>Monospace</Name>
+      <Size>14</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </Viewer>
+    <Log>
+      <Name>Monospace</Name>
+      <Size>12</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </Log>
+    <ViewerBook>
+      <Name>default</Name>
+      <Size>16</Size>
+      <Style>1</Style>
+      <Quality>0</Quality>
+    </ViewerBook>
+    <Console>
+      <Name>Monospace</Name>
+      <Size>12</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </Console>
+    <OptionsTree>
+      <Name>default</Name>
+      <Size>10</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </OptionsTree>
+    <OptionsMain>
+      <Name>default</Name>
+      <Size>10</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </OptionsMain>
+    <SearchResults>
+      <Name>default</Name>
+      <Size>14</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </SearchResults>
+    <PathEdit>
+      <Name>default</Name>
+      <Size>8</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </PathEdit>
+    <FunctionButtons>
+      <Name>default</Name>
+      <Size>8</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </FunctionButtons>
+  </Fonts>
+  <ToolTips>
+    <ShowToolTipMode>True</ShowToolTipMode>
+    <CustomFields/>
+    <ActualToolTipMode>0</ActualToolTipMode>
+    <ToolTipHideTimeOut>0</ToolTipHideTimeOut>
+  </ToolTips>
+  <Layout>
+    <MainMenu>True</MainMenu>
+    <ButtonBar Enabled="True">
+      <FlatIcons>True</FlatIcons>
+      <ButtonHeight>24</ButtonHeight>
+      <IconSize>16</IconSize>
+      <ReportErrorWithCommands>False</ReportErrorWithCommands>
+    </ButtonBar>
+    <DriveBar1>True</DriveBar1>
+    <DriveBar2>True</DriveBar2>
+    <DriveBarFlat>True</DriveBarFlat>
+    <DrivesListButton Enabled="True">
+      <ShowLabel>True</ShowLabel>
+      <ShowFileSystem>True</ShowFileSystem>
+      <ShowFreeSpace>True</ShowFreeSpace>
+    </DrivesListButton>
+    <SeparateTree>False</SeparateTree>
+    <DirectoryTabs>True</DirectoryTabs>
+    <CurrentDirectory>True</CurrentDirectory>
+    <TabHeader>True</TabHeader>
+    <StatusBar>True</StatusBar>
+    <CmdLine>True</CmdLine>
+    <LogWindow>False</LogWindow>
+    <TermWindow>False</TermWindow>
+    <KeyButtons>True</KeyButtons>
+    <InterfaceFlat>True</InterfaceFlat>
+    <DriveFreeSpace>True</DriveFreeSpace>
+    <DriveIndicator>False</DriveIndicator>
+    <ProgressInMenuBar>False</ProgressInMenuBar>
+    <PanelOfOperationsInBackground>True</PanelOfOperationsInBackground>
+    <HorizontalFilePanels>False</HorizontalFilePanels>
+    <ShortFormatDriveInfo>False</ShortFormatDriveInfo>
+  </Layout>
+  <FilesViews>
+    <Sorting>
+      <CaseSensitivity>0</CaseSensitivity>
+      <NaturalSorting>False</NaturalSorting>
+      <SortFolderMode>0</SortFolderMode>
+      <NewFilesPosition>2</NewFilesPosition>
+      <UpdatedFilesPosition>2</UpdatedFilesPosition>
+    </Sorting>
+    <ColumnsView>
+      <AutoSaveWidth>True</AutoSaveWidth>
+      <TitleStyle>1</TitleStyle>
+    </ColumnsView>
+    <BriefView>
+      <FileExtAligned>False</FileExtAligned>
+      <Columns>
+        <FixedWidth>100</FixedWidth>
+        <FixedCount>2</FixedCount>
+        <AutoSize>2</AutoSize>
+      </Columns>
+    </BriefView>
+    <ExtraLineSpan>2</ExtraLineSpan>
+    <FolderPrefix>[</FolderPrefix>
+    <FolderPostfix>]</FolderPostfix>
+  </FilesViews>
+  <Keyboard>
+    <Typing>
+      <Actions>
+        <NoModifier>2</NoModifier>
+        <Alt>0</Alt>
+        <CtrlAlt>3</CtrlAlt>
+      </Actions>
+    </Typing>
+  </Keyboard>
+  <FileOperations>
+    <BufferSize>524288</BufferSize>
+    <UseMmapInSearch>False</UseMmapInSearch>
+    <PartialNameSearch>True</PartialNameSearch>
+    <WipePassNumber>1</WipePassNumber>
+    <DropReadOnlyFlag>False</DropReadOnlyFlag>
+    <ProcessComments>False</ProcessComments>
+    <RenameSelOnlyName>False</RenameSelOnlyName>
+    <ShowCopyTabSelectPanel>False</ShowCopyTabSelectPanel>
+    <UseTrash>True</UseTrash>
+    <SkipFileOpError>False</SkipFileOpError>
+    <TypeOfDuplicatedRename>0</TypeOfDuplicatedRename>
+    <ShowDialogOnDragDrop>False</ShowDialogOnDragDrop>
+    <DragAndDropTextRichtextDesireLevel>0</DragAndDropTextRichtextDesireLevel>
+    <DragAndDropTextHtmlDesireLevel>1</DragAndDropTextHtmlDesireLevel>
+    <DragAndDropTextUnicodeDesireLevel>2</DragAndDropTextUnicodeDesireLevel>
+    <DragAndDropTextSimpletextDesireLevel>3</DragAndDropTextSimpletextDesireLevel>
+    <DragAndDropAskFormatEachTime>False</DragAndDropAskFormatEachTime>
+    <DragAndDropTextAutoFilename>False</DragAndDropTextAutoFilename>
+    <DragAndDropSaveUnicodeTextInUFT8>True</DragAndDropSaveUnicodeTextInUFT8>
+    <OverwriteFolder>False</OverwriteFolder>
+    <NtfsHourTimeDelay>False</NtfsHourTimeDelay>
+    <ProgressKind>0</ProgressKind>
+    <Confirmations>12</Confirmations>
+    <Options>
+      <Symlink>0</Symlink>
+      <CorrectLinks>False</CorrectLinks>
+      <FileExists>0</FileExists>
+      <DirectoryExists>0</DirectoryExists>
+      <SetPropertyError>0</SetPropertyError>
+      <ReserveSpace>False</ReserveSpace>
+      <CheckFreeSpace>True</CheckFreeSpace>
+      <CopyAttributes>True</CopyAttributes>
+      <CopyTime>True</CopyTime>
+      <CopyOwnership>True</CopyOwnership>
+      <CopyPermissions>False</CopyPermissions>
+      <ExcludeEmptyTemplateDirectories>True</ExcludeEmptyTemplateDirectories>
+      <Verify>False</Verify>
+    </Options>
+    <HashBufferSize>8388608</HashBufferSize>
+    <SearchDefaultTemplate/>
+    <AutoExtractOpenMask/>
+    <InitiallyClearFileMask>True</InitiallyClearFileMask>
+    <NewSearchClearFiltersAction>0</NewSearchClearFiltersAction>
+    <ShowMenuBarInFindFiles>True</ShowMenuBarInFindFiles>
+    <Extract>
+      <Overwrite>False</Overwrite>
+    </Extract>
+  </FileOperations>
+  <Log Enabled="False" LogFileWithDateInName="False">
+    <FileName>/home/szyms/.config/doublecmd/doublecmd.log</FileName>
+    <Options>511</Options>
+  </Log>
+  <History>
+    <SearchReplaceHistory Save="True"/>
+    <DirHistory Save="True"/>
+    <CmdLineHistory Save="True"/>
+    <FileMaskHistory Save="True"/>
+  </History>
+  <QuickSearch>
+    <MatchBeginning>True</MatchBeginning>
+    <MatchEnding>True</MatchEnding>
+    <Case>1</Case>
+    <Items>2</Items>
+  </QuickSearch>
+  <QuickFilter>
+    <AutoHide>True</AutoHide>
+    <SaveSessionModifications>False</SaveSessionModifications>
+  </QuickFilter>
+  <Miscellaneous>
+    <GridVertLine>False</GridVertLine>
+    <GridHorzLine>False</GridHorzLine>
+    <ShowWarningMessages>True</ShowWarningMessages>
+    <SpaceMovesDown>False</SpaceMovesDown>
+    <DirBrackets>True</DirBrackets>
+    <InplaceRename>False</InplaceRename>
+    <HotDirAddTargetOrNot>False</HotDirAddTargetOrNot>
+    <HotDirFullExpandOrNot>False</HotDirFullExpandOrNot>
+    <ShowPathInPopup>False</ShowPathInPopup>
+    <ShowOnlyValidEnv>True</ShowOnlyValidEnv>
+    <WhereToAddNewHotDir>2</WhereToAddNewHotDir>
+    <DblClickToParent>False</DblClickToParent>
+    <InplaceRenameButton>False</InplaceRenameButton>
+  </Miscellaneous>
+  <Thumbnails Save="True">
+    <Width>128</Width>
+    <Height>128</Height>
+  </Thumbnails>
+  <AutoRefresh>
+    <Options>3</Options>
+    <ExcludeDirs/>
+    <Mode>0</Mode>
+  </AutoRefresh>
+  <Icons>
+    <ShowMode>3</ShowMode>
+    <ShowOverlays>False</ShowOverlays>
+    <Size>16</Size>
+    <Exclude>False</Exclude>
+    <ExcludeDirs/>
+    <ShowInMenus Enabled="False">
+      <Size>16</Size>
+    </ShowInMenus>
+    <Theme>dctheme</Theme>
+    <DiskSize>16</DiskSize>
+    <DiskAlpha>50</DiskAlpha>
+    <CustomIcons>0</CustomIcons>
+    <PixelsPerInch>96</PixelsPerInch>
+    <ShowButtonGlyphs>0</ShowButtonGlyphs>
+    <ShowHiddenDimmed>False</ShowHiddenDimmed>
+  </Icons>
+  <IgnoreList Enabled="False">
+    <IgnoreListFile>/home/szyms/.config/doublecmd/ignorelist.txt</IgnoreListFile>
+  </IgnoreList>
+  <DirectoryHotList/>
+  <Viewer>
+    <PreviewVisible>False</PreviewVisible>
+    <ImageStretch>False</ImageStretch>
+    <CopyMovePath1/>
+    <CopyMovePath2/>
+    <CopyMovePath3/>
+    <CopyMovePath4/>
+    <CopyMovePath5/>
+    <PaintMode>0</PaintMode>
+    <PaintWidth>5</PaintWidth>
+    <NumberOfColumns>1</NumberOfColumns>
+    <ViewerMode>1</ViewerMode>
+    <PaintColor>255</PaintColor>
+    <BackgroundColor>0</BackgroundColor>
+    <FontColor>16777215</FontColor>
+    <TextPosition>0</TextPosition>
+    <ImageStretchLargeOnly>False</ImageStretchLargeOnly>
+    <ImageCenter>True</ImageCenter>
+    <ImageExifRotate>True</ImageExifRotate>
+    <TabSpaces>8</TabSpaces>
+    <MaxTextWidth>1024</MaxTextWidth>
+  </Viewer>
+  <SyncDirs>
+    <Subdirs>True</Subdirs>
+    <ByContent>True</ByContent>
+    <IgnoreDate>True</IgnoreDate>
+    <FilterCopyRight>False</FilterCopyRight>
+    <FilterEqual>True</FilterEqual>
+    <FilterNotEqual>False</FilterNotEqual>
+    <FilterCopyLeft>False</FilterCopyLeft>
+    <FilterDuplicates>True</FilterDuplicates>
+    <FilterSingles>True</FilterSingles>
+    <FileMask>*</FileMask>
+    <Asymmetric Save="False">False</Asymmetric>
+  </SyncDirs>
+  <Lua>
+    <PathToLibrary>liblua5.1.so.0</PathToLibrary>
+  </Lua>
+  <NameShortcutFile>shortcuts.scf</NameShortcutFile>
+  <LastUsedPacker>zip</LastUsedPacker>
+  <UseShellForFileOperations>False</UseShellForFileOperations>
+  <SearchTemplates/>
+  <ColumnsSets DefaultTitleHash="0">
+    <ColumnsSet UseFrameCursor="False">
+      <Name>Default</Name>
+      <CustomView>False</CustomView>
+      <FileSystem>&lt;General&gt;</FileSystem>
+      <PixelsPerInch>96</PixelsPerInch>
+      <CursorBorder Enabled="False">
+        <Color>-2147483635</Color>
+      </CursorBorder>
+      <Columns>
+        <Column>
+          <Title>Name</Title>
+          <FuncString>[DC().GETFILENAMENOEXT{}]</FuncString>
+          <Width>311</Width>
+          <Align>0</Align>
+          <Font>
+            <Name>default</Name>
+            <Size>10</Size>
+            <Style>1</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Ext</Title>
+          <FuncString>[DC().GETFILEEXT{}]</FuncString>
+          <Width>61</Width>
+          <Align>0</Align>
+          <Font>
+            <Name>default</Name>
+            <Size>10</Size>
+            <Style>1</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Size</Title>
+          <FuncString>[DC().GETFILESIZE{}]</FuncString>
+          <Width>71</Width>
+          <Align>1</Align>
+          <Font>
+            <Name>default</Name>
+            <Size>10</Size>
+            <Style>1</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Date</Title>
+          <FuncString>[DC().GETFILETIME{}]</FuncString>
+          <Width>128</Width>
+          <Align>1</Align>
+          <Font>
+            <Name>default</Name>
+            <Size>10</Size>
+            <Style>1</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Attr</Title>
+          <FuncString>[DC().GETFILEATTR{}]</FuncString>
+          <Width>100</Width>
+          <Align>0</Align>
+          <Font>
+            <Name>default</Name>
+            <Size>10</Size>
+            <Style>1</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+      </Columns>
+    </ColumnsSet>
+  </ColumnsSets>
+  <Editor>
+    <SynEditOptions>856075</SynEditOptions>
+    <EditWaitTime>2000</EditWaitTime>
+    <SynEditTabWidth>8</SynEditTabWidth>
+  </Editor>
+  <InternalAssociations>
+    <OfferToAddNewFileType>False</OfferToAddNewFileType>
+    <LastCustomAction>Custom action</LastCustomAction>
+    <ExpandedContextMenu>False</ExpandedContextMenu>
+    <ExecuteViaShell>False</ExecuteViaShell>
+    <OpenSystemWithTerminalClose>False</OpenSystemWithTerminalClose>
+    <OpenSystemWithTerminalStayOpen>False</OpenSystemWithTerminalStayOpen>
+    <IncludeFileAssociation>False</IncludeFileAssociation>
+  </InternalAssociations>
+  <FavoriteTabsOptions>
+    <FavoriteTabsUseRestoreExtraOptions>False</FavoriteTabsUseRestoreExtraOptions>
+    <WhereToAdd>1</WhereToAdd>
+    <Expand>True</Expand>
+    <GotoConfigAftSav>False</GotoConfigAftSav>
+    <GotoConfigAftReSav>False</GotoConfigAftReSav>
+    <DfltLeftGoTo>0</DfltLeftGoTo>
+    <DfltRightGoTo>1</DfltRightGoTo>
+    <DfltKeep>5</DfltKeep>
+    <DfltSaveDirHistory>False</DfltSaveDirHistory>
+    <FavTabsLastUniqueID>{FBCDA76A-71DB-48C1-9B6D-A3CE6E43B6A8}</FavTabsLastUniqueID>
+  </FavoriteTabsOptions>
+  <LastDoAnyCommand>cm_Refresh</LastDoAnyCommand>
+  <MultiRenamePresets>
+    <LastPreset/>
+    <Presets/>
+  </MultiRenamePresets>
+  <Description>
+    <CreateNewUnicode>True</CreateNewUnicode>
+    <DefaultEncoding>2</DefaultEncoding>
+    <CreateNewEncoding>3</CreateNewEncoding>
+  </Description>
+  <TreeViewMenu>
+    <UseTVMDirectoryHotlistFMC>False</UseTVMDirectoryHotlistFMC>
+    <UseTVMDirectoryHotlistFDC>False</UseTVMDirectoryHotlistFDC>
+    <UseTVMFavoriteTabsFMC>False</UseTVMFavoriteTabsFMC>
+    <UseTVMFavoriteTabsFDC>False</UseTVMFavoriteTabsFDC>
+    <UseTVMDirHistory>False</UseTVMDirHistory>
+    <UseTVMViewHistory>False</UseTVMViewHistory>
+    <UseTVMCommandLineHistory>False</UseTVMCommandLineHistory>
+    <TreeViewMenuShortcutExit>True</TreeViewMenuShortcutExit>
+    <TreeViewMenuSingleClickExit>True</TreeViewMenuSingleClickExit>
+    <TreeViewMenuDoubleClickExit>True</TreeViewMenuDoubleClickExit>
+    <Context00>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context00>
+    <Context01>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context01>
+    <Context02>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context02>
+    <Context03>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context03>
+    <Context04>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context04>
+    <Context05>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context05>
+    <Context06>
+      <CaseSensitive>False</CaseSensitive>
+      <IgnoreAccents>True</IgnoreAccents>
+      <ShowWholeBranchIfMatch>False</ShowWholeBranchIfMatch>
+    </Context06>
+    <TreeViewMenuUseKeyboardShortcut>True</TreeViewMenuUseKeyboardShortcut>
+    <BackgroundColor>-2147483617</BackgroundColor>
+    <ShortcutColor>255</ShortcutColor>
+    <NormalTextColor>-2147483640</NormalTextColor>
+    <SecondaryTextColor>-2147483642</SecondaryTextColor>
+    <FoundTextColor>-2147483635</FoundTextColor>
+    <UnselectableTextColor>-2147483631</UnselectableTextColor>
+    <CursorColor>-2147483635</CursorColor>
+    <ShortcutUnderCursor>-2147483634</ShortcutUnderCursor>
+    <NormalTextUnderCursor>-2147483634</NormalTextUnderCursor>
+    <SecondaryTextUnderCursor>-2147483628</SecondaryTextUnderCursor>
+    <FoundTextUnderCursor>65535</FoundTextUnderCursor>
+    <UnselectableUnderCursor>-2147483631</UnselectableUnderCursor>
+  </TreeViewMenu>
+  <HotKeySortOrder>0</HotKeySortOrder>
+  <UseEnterToCloseHotKeyEditor>True</UseEnterToCloseHotKeyEditor>
+  <MarkMaskCaseSensitive>False</MarkMaskCaseSensitive>
+  <MarkMaskIgnoreAccents>False</MarkMaskIgnoreAccents>
+  <MarkMaskFilterWindows>False</MarkMaskFilterWindows>
+  <MarkShowWantedAttribute>False</MarkShowWantedAttribute>
+  <MarkDefaultWantedAttribute/>
+  <MarkLastWantedAttribute/>
+  <Differ>
+    <Colors>
+      <Added>11206570</Added>
+      <Deleted>11184895</Deleted>
+      <Modified>16755370</Modified>
+    </Colors>
+  </Differ>
+</doublecmd>

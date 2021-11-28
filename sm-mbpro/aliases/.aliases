@@ -1,0 +1,128 @@
+# essential aliases:
+alias grep='grep --color=auto'
+alias tree='tree -a'
+alias ls='gls --color=auto'
+alias ll='gls -lah --group-directories-first --color=auto'
+alias l='gls -lah --group-directories-first --color=auto'
+alias rm='rm -i'
+alias cp='cp -i'
+alias diff='colordiff'
+alias su='sudo su'
+
+# python version:
+alias python='python3'
+
+# quick pings:
+alias ?='ping -c4 -i0.2 google.com'
+alias pmik='ping -c4 -i0.2 192.168.50.1'
+alias pbrix='ping -c4 -i0.2 192.168.50.35'
+alias ip?='wget -qO- checkip.amazonaws.com'
+
+# SSH shortcuts:
+alias archvm='ssh localhost -p 55222 -l szyms -i ~/.ssh/archvm'
+alias linkpocket='ssh -l ec2-user linkpocket.duckdns.org -p 44998'
+alias traust='ssh -l szyms traust.duckdns.org -p 44998'
+
+# AWS profiles:
+alias amz-echo='echo $AWS_DEFAULT_PROFILE'
+alias amz-def='export AWS_DEFAULT_PROFILE=default'
+alias amz-mrp-sso='export AWS_DEFAULT_PROFILE=merapar-sso'
+alias amz-sky-deane-nonprod='export AWS_DEFAULT_PROFILE=sky-deane-nonprod'
+alias amz-sky-deane-prod='export AWS_DEFAULT_PROFILE=sky-deane-prod'
+alias amz-sky-cherry-nonprod='export AWS_DEFAULT_PROFILE=sky-cherry-nonprod'
+alias amz-sky-cherry-prod='export AWS_DEFAULT_PROFILE=sky-cherry-prod'
+
+# run vpn!
+alias mikrotik='cd ~/.openvpn/mikrotik/ && sudo openvpn mikrotik.conf'
+
+# source various files quickly:
+alias brc='source ~/.bashrc'
+alias zrc='source ~/.zshrc'
+
+# error-correcting aliases:
+alias cd-='cd -'
+alias cd..='cd ..'
+alias ll..='ll ..'
+
+# cd aliases:
+alias cdd='cd ~/Downloads'
+#alias cdms='cd ~/workspace/selene/dms/device-migration-service'
+
+# encryption:
+alias mailz='gocryptfs ~/.mailz ~/Library/Thunderbird && ls -lah ~/Library/Thunderbird'
+alias mailz-homepl='gocryptfs ~/.mailz-homepl ~/Library/Thunderbird && ls -lah ~/Library/Thunderbird'
+alias umailz='umount ~/Library/Thunderbird && ls -lah ~/Library/Thunderbird'
+# the path below was modified dear wanderer 🙂
+alias vc-mnt='sudo veracrypt -t ~/path/to/your/vault.img /Volumes/veracrypt --pim 0 --keyfiles "" --protect-hidden no --slot 1'
+alias vc-ls='veracrypt -t -l'
+alias vc-umount='sudo veracrypt -t -d --slot 1'
+
+# miscellaneous:
+alias kh='nvim -c /Users/szmktk/.ssh/known_hosts'				# quick editing this of file is handy when ssh servers change often
+alias ccat='pygmentize -g'
+alias star-wars='telnet towel.blinkenlights.nl'
+alias geany='/Applications/Geany.app/Contents/MacOS/geany-bin 2>/dev/null'
+alias r='reset'
+alias md5sum='gmd5sum'
+alias shred='gshred'
+#alias mc='/usr/local/Cellar/midnight-commander/4.8.20/bin/mc'
+alias ipa='ifconfig en0'
+alias weather='curl http://v2.wttr.in/'
+alias vi='nvim'
+alias lgt='lazygit'
+alias nl='nl -b a'
+alias dps='docker ps'
+alias dcd='docker-compose down'
+alias dcu='docker-compose up -d'
+alias gpg='/usr/local/opt/gnupg@2.2/bin/gpg'
+alias fd='fd -H'
+
+# json - yaml conversion:
+alias json-to-yaml='ruby -ryaml -rjson -e '\''puts YAML.dump(JSON.load(ARGF))'\'' <'
+alias yaml-to-json='ruby -ryaml -rjson -e '\''puts JSON.pretty_generate(YAML.load(ARGF))'\'' <'
+
+# youtube-dl shortcuts:
+alias yt='youtube-dl'
+alias yt720="youtube-dl -f 'bestvideo[height<=720]+bestaudio/best[height<=720]'"
+
+# git shortcuts:
+alias gd='git diff'
+alias gh='git log --oneline | head'
+alias gpo='git push origin'
+alias gpob='git push origin "$(git_current_branch)"'
+alias gpl='git pull'
+alias gplb='git pull origin "$(git_current_branch)"'
+alias gcm='git checkout master'
+alias gcmain='git checkout main'
+alias gcb='git checkout -b'
+alias branches='git branch -a'
+
+# functions:
+psgrep() {
+  ps -ef | {
+    read -r;
+    echo "$REPLY";
+    grep -i --color=auto "$@"
+  }
+}
+
+aws_prompt () {
+  if [[ -n "$AWS_DEFAULT_PROFILE" ]]; then
+    echo -e "$AWS_DEFAULT_PROFILE";
+  else
+    echo "default"
+  fi
+}
+
+mkcd() {
+  mkdir -p -- "$@" && eval cd -- "\"\$$#\""
+}
+
+w-later() {
+    ssh -l szyms traust.duckdns.org -p 44998 "mkdir files/vids/$@ && cd files/vids/$@ && youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' $@"
+}
+
+time-shell() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}

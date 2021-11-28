@@ -1,0 +1,22 @@
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+
+# path to the partition holding ISO images (using UUID)
+set imgdevpath="/dev/disk/by-uuid/d6c2da84-2326-28d2-2a5a-5500c5c4a1bb"
+
+menuentry "[loopback]tails-i386-2.12" {
+    set isofile='/boot/iso/tails-i386-2.12.iso'
+    loopback loop $isofile
+    linux (loop)/live/vmlinuz2 boot=live config findiso=${isofile}  apparmor=1 security=apparmor nopersistent noprompt timezone=Etc/UTC block.events_dfl_poll_msecs=1000 noautologin module=Tails
+    initrd (loop)/live/initrd2.img
+}
+
+menuentry "[loopback]kali-linux-2016.2-amd64" {
+    set isofile='/boot/iso/kali-linux-2016.2-amd64.iso'
+    loopback loop $isofile
+    linux (loop)/live/vmlinuz boot=live findiso=$isofile noconfig=sudo username=root hostname=kali
+    initrd (loop)/live/initrd.img
+}
