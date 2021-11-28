@@ -1,0 +1,15 @@
+# gitignore
+
+# config directories for machines that I do not want public
+brix/
+linkpocket/
+pygargus/
+traust/
+
+# miscellaneous
+mimir/firefox/
+mimir/scripts/
+
+sm-mbpro/aws/
+sm-mbpro/scripts/
+
