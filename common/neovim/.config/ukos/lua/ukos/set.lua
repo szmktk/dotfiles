@@ -9,6 +9,7 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
+vim.opt.breakindent = true
 vim.opt.wrap = false
 vim.opt.smartcase = true
 vim.opt.ignorecase = true
@@ -47,3 +48,4 @@ command! -bang -nargs=* Rg
   \   "rg --hidden --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
 ]])
+

@@ -32,6 +32,9 @@ require("gitsigns").setup{
     },
   },
 
+  -- https://github.com/lewis6991/gitsigns.nvim/issues/775#issuecomment-1589415441
+  _signs_staged_enable = true,
+
   on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
 
@@ -57,6 +60,8 @@ require("gitsigns").setup{
     -- Actions
     map({"n", "v"}, "<leader>hs", ":Gitsigns stage_hunk<CR>")
     map({"n", "v"}, "<leader>hr", ":Gitsigns reset_hunk<CR>")
+    map("n", "<leader>gh", ":Gitsigns change_base HEAD<CR>")
+    map("n", "<leader>hg", ":Gitsigns reset_base<CR>")
     map("n", "<leader>hS", gs.stage_buffer)
     map("n", "<leader>hu", gs.undo_stage_hunk)
     map("n", "<leader>hR", gs.reset_buffer)

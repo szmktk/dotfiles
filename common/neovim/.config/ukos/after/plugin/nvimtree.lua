@@ -126,4 +126,3 @@ vim.api.nvim_set_keymap("n", "<leader>so", ":NvimTreeFindFile<CR>", {noremap = t
 
 -- disable word wrap
 vim.cmd("autocmd FileType LuaTree setlocal nowrap")
-
