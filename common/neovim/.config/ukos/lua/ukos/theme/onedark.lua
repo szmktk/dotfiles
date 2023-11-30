@@ -1,4 +1,9 @@
--- onedark.nvim theme
+-- lazy.nvim entry:
+-- { "navarasu/onedark.nvim", priority = 1000 },
+-- config tested with version:
+-- "onedark.nvim": { "branch": "master", "commit": "b9acd92ded2ba155867ca5af9d618e933d96e3b0" },
+
+-- vim-illuminate does not work out-of-the-box with this theme
 local theme = require("onedark")
 
 theme.setup {
@@ -18,15 +23,9 @@ theme.setup {
 
 theme.load()
 
--- darcula-solid theme (somewhere between onedark's warm & warmer, but with a different syntax highlighting theme)
--- vim.cmd.colorscheme("darcula-solid")
--- vim.opt.termguicolors = true
--- vim.opt.background = "dark"
-
 require("lualine").setup {
   options = {
-    theme = "onedark" -- requies onedark.nvim to be loaded
-    -- theme = "moonfly"
+    theme = "onedark"
   },
   sections = {
     lualine_c = {

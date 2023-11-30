@@ -12,10 +12,19 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { "briones-gabriel/darcula-solid.nvim", dependencies = { "rktjmp/lush.nvim" },                        priority = 1000 },
-  { "navarasu/onedark.nvim",              priority = 1000 },
-  { "nvim-lualine/lualine.nvim",          dependencies = { "nvim-tree/nvim-web-devicons", lazy = true } },
-
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+      lazy = true
+    }
+  },
+  { "nanozuki/tabby.nvim" },
   {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {
@@ -42,8 +51,9 @@ require("lazy").setup({
   "tpope/vim-surround",
   "lewis6991/gitsigns.nvim",
   "christoomey/vim-tmux-navigator",
+  "ThePrimeagen/harpoon",
   "ThePrimeagen/vim-be-good",
-  "windwp/nvim-autopairs",
+  { "windwp/nvim-autopairs", opts = {} },
   "RRethy/vim-illuminate",
   "kdheepak/lazygit.nvim",
   "tpope/vim-fugitive",            -- need this one just because I want to use vim-rhubarb
@@ -89,6 +99,7 @@ require("lazy").setup({
     branch = "0.1.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
+      "debugloop/telescope-undo.nvim",
       -- Fuzzy Finder Algorithm which requires local dependencies to be built.
       -- Only load if `make` is available. Make sure you have the system
       -- requirements installed.
@@ -100,6 +111,10 @@ require("lazy").setup({
         cond = function()
           return vim.fn.executable "make" == 1
         end,
+      },
+      {
+        "nvim-telescope/telescope-live-grep-args.nvim",
+        version = "^1.0.0",
       },
     },
   },

@@ -54,10 +54,12 @@ vim.defer_fn(function()
       swap = {
         enable = true,
         swap_next = {
-          ["<leader>a"] = "@parameter.inner",
+          -- [P][A]rameter [N]ext
+          ["<leader>pan"] = "@parameter.inner",
         },
         swap_previous = {
-          ["<leader>A"] = "@parameter.inner",
+          -- [P][A]rameter [P]revious
+          ["<leader>pap"] = "@parameter.inner",
         },
       },
     },

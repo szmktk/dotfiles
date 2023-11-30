@@ -60,9 +60,9 @@ require("gitsigns").setup {
     -- Actions
     map({ "n", "v" }, "<leader>hs", ":Gitsigns stage_hunk<CR>", { desc = "Gitsigns [H]unk [S]tage" })
     map({ "n", "v" }, "<leader>hr", ":Gitsigns reset_hunk<CR>", { desc = "Gitsigns [H]unk [R]eset" })
-    map("n", "<leader>gh", ":Gitsigns change_base HEAD<CR>",
+    map("n", "<leader>hz", ":Gitsigns change_base HEAD<CR>",
       { desc = "Gitsigns change the base revision to diff against" })
-    map("n", "<leader>hg", ":Gitsigns reset_base<CR>",
+    map("n", "<leader>hy", ":Gitsigns reset_base<CR>",
       { desc = "Gitsigns reset the base revision to diff against back to the index" })
     map("n", "<leader>hS", gs.stage_buffer, { desc = "Gitsigns [H]unk [S]tage entire buffer" })
     map("n", "<leader>hu", gs.undo_stage_hunk, { desc = "Gitsigns [H]unk Stage [U]ndo" })

@@ -49,7 +49,7 @@ require("mason").setup()
 require("mason-lspconfig").setup()
 
 local servers = {
-  -- clangd = {},
+  dockerls = {},
   gopls = {
     settings = {
       gopls = {
@@ -61,20 +61,17 @@ local servers = {
       },
     },
   },
-  pyright = {},
-  tsserver = {},
-  yamlls = {},
-  dockerls = {},
-  -- pylyzer = {},
-  -- rust_analyzer = {},
-  -- html = { filetypes = { "html", "twig", "hbs"} },
-
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
     },
   },
+  -- pylyzer = {},
+  pyright = {},
+  terraformls = {},
+  tsserver = {},
+  yamlls = {},
 }
 
 -- setup neovim lua configuration

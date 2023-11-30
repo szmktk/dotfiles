@@ -1,4 +1,9 @@
 local actions = require("telescope.actions")
+local lga_actions = require("telescope-live-grep-args.actions")
+
+local function search_in_hidden_files(opts)
+  return { "--hidden" }
+end
 
 require("telescope").setup {
   defaults = {
@@ -12,15 +17,59 @@ require("telescope").setup {
       },
     },
   },
+  extensions = {
+    live_grep_args = {
+      auto_quoting = true,
+      mappings = {
+        i = {
+          ["<C-p>"] = lga_actions.quote_prompt(),
+          ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+          ["<C-h>"] = lga_actions.quote_prompt({ postfix = " --hidden " }),
+          ["<C-n>"] = lga_actions.quote_prompt({ postfix = " -t " }),
+        },
+      },
+    },
+    undo = {
+      use_delta = true,
+      side_by_side = false,
+      layout_strategy = "vertical",
+      layout_config = {
+        preview_height = 0.8,
+      },
+      mappings = {
+        i = {
+          ["<cr>"] = require("telescope-undo.actions").yank_additions,
+          ["<S-cr>"] = require("telescope-undo.actions").yank_deletions,
+          ["<C-cr>"] = require("telescope-undo.actions").restore,
+          -- alternative defaults, for users whose terminals do questionable things with modified <cr>
+          ["<C-y>"] = require("telescope-undo.actions").yank_deletions,
+          ["<C-r>"] = require("telescope-undo.actions").restore,
+        },
+        n = {
+          ["y"] = require("telescope-undo.actions").yank_additions,
+          ["Y"] = require("telescope-undo.actions").yank_deletions,
+          ["u"] = require("telescope-undo.actions").restore,
+        },
+      },
+    },
+  },
   pickers = {
     find_files = {
       hidden = true
+    },
+    live_grep = {
+      additional_args = search_in_hidden_files
+    },
+    grep_string = {
+      additional_args = search_in_hidden_files
     },
   },
 }
 
 -- Enable telescope fzf native, if installed
 pcall(require("telescope").load_extension, "fzf")
+pcall(require("telescope").load_extension, "undo")
+pcall(require("telescope").load_extension, "live_grep_args")
 
 -- Telescope live_grep in git root
 -- Function to find the git root directory based on the current buffer's path
@@ -51,7 +100,7 @@ local function live_grep_git_root()
   local git_root = find_git_root()
   if git_root then
     require("telescope.builtin").live_grep({
-      search_dirs = {git_root},
+      search_dirs = { git_root },
     })
   end
 end
@@ -68,14 +117,20 @@ vim.keymap.set("n", "<leader>/", function()
   })
 end, { desc = "[/] Fuzzily search in current buffer" })
 
-vim.keymap.set("n", "<C-N>", require("telescope.builtin").git_files, { desc = "Search git files" })
-vim.keymap.set("n", "<C-F>", require("telescope.builtin").live_grep, { desc = "Search with grep" })
-vim.keymap.set("n", "<leader>sg", ":LiveGrepGitRoot<cr>", { desc = "[S]earch by [G]rep on Git Root" })
--- vim.keymap.set("n", "<leader>gf", require("telescope.builtin").git_files, { desc = "Search [G]it [F]iles" })
-vim.keymap.set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles" })
-vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
-vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string, { desc = "[S]earch current [W]ord" })
-vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
-vim.keymap.set("n", "<leader>sr", require("telescope.builtin").resume, { desc = "[S]earch [R]resume" })
-vim.keymap.set("n", "<leader>tt", require("telescope.builtin").builtin, { desc = "[T]elescope builtin" })
-vim.keymap.set("n", "<leader>gs", require("telescope.builtin").git_status, { desc = "[G]it [S]tatus" })
+vim.keymap.set("n", "<C-N>", require("telescope.builtin").git_files, { desc = "Search git files", noremap = true })
+vim.keymap.set("n", "<C-F>", require("telescope").extensions.live_grep_args.live_grep_args,
+  { desc = "Grep files with args", noremap = true })
+vim.keymap.set("n", "<leader>gh", require("telescope.builtin").live_grep,
+  { desc = "[G]rep Files (including [H]idden)", noremap = true })
+vim.keymap.set("n", "<leader>sg", ":LiveGrepGitRoot<cr>", { desc = "[S]earch by Grep on [G]it Root", noremap = true })
+-- vim.keymap.set("n", "<leader>gf", require("telescope.builtin").git_files, { desc = "Search [G]it [F]iles", noremap = true })
+vim.keymap.set("n", "<leader>sf", require("telescope.builtin").find_files,
+  { desc = "[S]earch All [F]iles", noremap = true })
+vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp", noremap = true })
+vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string,
+  { desc = "[S]earch current [W]ord", noremap = true })
+vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics,
+  { desc = "[S]earch [D]iagnostics", noremap = true })
+vim.keymap.set("n", "<leader>sr", require("telescope.builtin").resume, { desc = "[S]earch [R]resume", noremap = true })
+vim.keymap.set("n", "<leader>tt", require("telescope.builtin").builtin, { desc = "[T]elescope builtin", noremap = true })
+vim.keymap.set("n", "<leader>gs", require("telescope.builtin").git_status, { desc = "[G]it [S]tatus", noremap = true })

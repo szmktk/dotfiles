@@ -117,7 +117,8 @@ map("n", "<leader>fml", "<cmd>CellularAutomaton scramble<CR>")
 map("n", "<leader>lg", "<cmd>LazyGit<CR>")
 map("n", "<leader>xx", "<cmd>TroubleToggle<CR>")
 map("n", "<leader>6", "<cmd>TodoTrouble<CR>")
-map("n", "<leader>u", "<cmd>UndotreeToggle<CR>")
+map("n", "<leader>tu", "<cmd>Telescope undo<cr>", { desc = "[T]elescope [U]ndo" })
+map("n", "<leader>ut", "<cmd>UndotreeToggle<CR>", { desc = "[U]ndotree [T]oggle" })
 
 -- comment out a single line with CTRL+/
 map("n", "<C-_>", "<cmd>Commentary<CR>")
