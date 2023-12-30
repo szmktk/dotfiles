@@ -1,0 +1,58 @@
+working_directory = "/home/szyms/Downloads"
+
+import = [
+  # "~/.config/alacritty/color-schemes/catppuccin-mocha.toml"
+  # "~/.config/alacritty/color-schemes/catppuccin-macchiato.toml"
+  # "~/.config/alacritty/color-schemes/catppuccin-frappe.toml"
+  # "~/.config/alacritty/color-schemes/catppuccin-latte.toml"
+  # "~/.config/alacritty/color-schemes/doom-one.toml"
+  "~/.config/alacritty/color-schemes/iterm2-szmktk.toml"
+  # "~/.config/alacritty/color-schemes/solarized-dark.toml"
+]
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 10.0
+
+# [font.bold]
+# family = "MesloLGS NF"
+# style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+# [font.italic]
+# family = "MesloLGS NF"
+# style = "Italic"
+
+# [font.normal]
+# family = "MesloLGS NF"
+# style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+# skip word forward/backward with ALT key
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[window]
+decorations = "none"
+
+[window.padding]
+x = 5
+y = 0
