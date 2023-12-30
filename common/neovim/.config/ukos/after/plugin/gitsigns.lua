@@ -68,7 +68,7 @@ require("gitsigns").setup {
     map("n", "<leader>hu", gs.undo_stage_hunk, { desc = "Gitsigns [H]unk Stage [U]ndo" })
     map("n", "<leader>hR", gs.reset_buffer, { desc = "Gitsigns [H]unks [R]eset entire buffer" })
     map("n", "<leader>hp", gs.preview_hunk, { desc = "Gitsigns [H]unk [P]review" })
-    map("n", "<leader>hb", function() gs.blame_line { full = true } end,
+    map("n", "<leader>hb", function() gs.blame_line { full = false } end,
       { desc = "Gitsigns [H]unk [B]lame Current Line" })
     map("n", "<leader>tb", gs.toggle_current_line_blame, { desc = "Gitsigns [T]oggle [B]lame Current Line" })
     -- map("n", "<leader>hD", gs.diffthis, { desc = "Gitsigns [H]unks [D]iff" })
