@@ -9,7 +9,7 @@
 #
 
 # Themepack format options
-set -goq @themepack-status-left-area-left-format "🥷"
+set -goq @themepack-status-left-area-left-format "☯"
 set -goq @themepack-status-left-area-middle-format "#(whoami)"
 set -goq @themepack-status-left-area-right-format "#I:#P"
 set -goq @themepack-status-right-area-left-format "%H:%M"
