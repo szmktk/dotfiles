@@ -5,6 +5,20 @@ This directory contains two of my main [neovim](https://neovim.io/) profiles:
   - one for software development, acting as a custom tailored IDE for my specific needs; found inside [ukos](ukos) directory
 
 
+### How to import a Neovim profile using `NVIM_APPNAME`
+
+- clone a profile directory straight to `$XDG_CONFIG_HOME`
+```
+git clone $REPO_URL
+mv $REPO_DIR ~/.config/
+```
+
+- define an alias
+```
+alias nv='NVIM_APPNAME=ukos nvim'
+```
+
+
 ### Directory layout
 
 As of 2023-11-19
