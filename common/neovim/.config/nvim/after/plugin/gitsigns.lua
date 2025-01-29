@@ -32,9 +32,6 @@ require("gitsigns").setup {
     },
   },
 
-  -- https://github.com/lewis6991/gitsigns.nvim/issues/775#issuecomment-1589415441
-  _signs_staged_enable = true,
-
   on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
 

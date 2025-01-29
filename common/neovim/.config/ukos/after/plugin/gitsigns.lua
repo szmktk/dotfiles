@@ -1,39 +1,11 @@
 require("gitsigns").setup {
   signs = {
-    add = {
-      hl = "GitSignsAdd",
-      text = "▎",
-      numhl = "GitSignsAddNr",
-      linehl = "GitSignsAddLn",
-    },
-    change = {
-      hl = "GitSignsChange",
-      text = "▎",
-      numhl = "GitSignsChangeNr",
-      linehl = "GitSignsChangeLn",
-    },
-    delete = {
-      hl = "GitSignsDelete",
-      text = "契",
-      numhl = "GitSignsDeleteNr",
-      linehl = "GitSignsDeleteLn",
-    },
-    topdelete = {
-      hl = "GitSignsDelete",
-      text = "契",
-      numhl = "GitSignsDeleteNr",
-      linehl = "GitSignsDeleteLn",
-    },
-    changedelete = {
-      hl = "GitSignsChange",
-      text = "▎",
-      numhl = "GitSignsChangeNr",
-      linehl = "GitSignsChangeLn",
-    },
+    add = { text = "▎" },
+    change = { text = "▎" },
+    delete = { text = "契" },
+    topdelete = { text = "契" },
+    changedelete = { text = "▎" },
   },
-
-  -- https://github.com/lewis6991/gitsigns.nvim/issues/775#issuecomment-1589415441
-  _signs_staged_enable = true,
 
   on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
@@ -58,12 +30,12 @@ require("gitsigns").setup {
     end, { expr = true, buffer = bufnr, desc = "Jump to previous hunk" })
 
     -- Actions
-    map({ "n", "v" }, "<leader>hs", ":Gitsigns stage_hunk<CR>", { desc = "Gitsigns [H]unk [S]tage" })
-    map({ "n", "v" }, "<leader>hr", ":Gitsigns reset_hunk<CR>", { desc = "Gitsigns [H]unk [R]eset" })
+    map({ "n", "v" }, "<leader>hs", ":Gitsigns stage_hunk<CR>", { desc = "Gitsigns [H]unk [S]tage", silent = true })
+    map({ "n", "v" }, "<leader>hr", ":Gitsigns reset_hunk<CR>", { desc = "Gitsigns [H]unk [R]eset", silent = true })
     map("n", "<leader>hz", ":Gitsigns change_base HEAD<CR>",
-      { desc = "Gitsigns change the base revision to diff against" })
+      { desc = "Gitsigns change the base revision to diff against", silent = true })
     map("n", "<leader>hy", ":Gitsigns reset_base<CR>",
-      { desc = "Gitsigns reset the base revision to diff against back to the index" })
+      { desc = "Gitsigns reset the base revision to diff against back to the index", silent = true })
     map("n", "<leader>hS", gs.stage_buffer, { desc = "Gitsigns [H]unk [S]tage entire buffer" })
     map("n", "<leader>hu", gs.undo_stage_hunk, { desc = "Gitsigns [H]unk Stage [U]ndo" })
     map("n", "<leader>hR", gs.reset_buffer, { desc = "Gitsigns [H]unks [R]eset entire buffer" })
@@ -73,7 +45,7 @@ require("gitsigns").setup {
     map("n", "<leader>tb", gs.toggle_current_line_blame, { desc = "Gitsigns [T]oggle [B]lame Current Line" })
     -- map("n", "<leader>hD", gs.diffthis, { desc = "Gitsigns [H]unks [D]iff" })
     map("n", "<leader>hd", function() gs.diffthis("~") end, { desc = "Gitsigns [H]unks [D]iff with Vimdiff" })
-    map("n", "<leader>td", gs.toggle_deleted, { desc = "Gitsigns [T]oggle [D]eleted" })
+    -- map("n", "<leader>td", gs.toggle_deleted, { desc = "Gitsigns [T]oggle [D]eleted" })
 
     -- Text object
     map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", { desc = "Gitsigns Select Hunk" })

@@ -38,9 +38,10 @@ vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 vim.opt.splitright = true
 vim.opt.splitbelow = true
-vim.opt.spell = false
+vim.opt.spell = true
 vim.opt.complete = ".,w,b,u,t,i,kspell"
 vim.opt.omnifunc = "syntaxcomplete#Complete"
+vim.opt.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 vim.cmd([[
 command! -bang -nargs=* Rg
@@ -48,4 +49,3 @@ command! -bang -nargs=* Rg
   \   "rg --hidden --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
 ]])
-

@@ -13,28 +13,9 @@ vim.cmd.colorscheme("tokyonight-storm")
 -- vim.cmd.colorscheme("tokyonight-day")
 -- vim.cmd.colorscheme("tokyonight-moon")
 
+local lualine_sections = require("ukos.theme.lualine")
 require("lualine").setup {
-  options = {
-    theme = "tokyonight"
-  },
-  sections = {
-    lualine_c = {
-      {
-        "filename",
-        file_status = true,
-        newfile_status = true,
-        path = 1, -- 1: Relative path
-      }
-    }
-  },
-  inactive_sections = {
-    lualine_c = {
-      {
-        "filename",
-        file_status = true,
-        newfile_status = true,
-        path = 1, -- 1: Relative path
-      }
-    }
-  }
+  options = { theme = "tokyonight" },
+  sections = lualine_sections.active,
+  inactive_sections = lualine_sections.inactive
 }

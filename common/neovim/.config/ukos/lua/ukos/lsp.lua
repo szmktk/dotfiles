@@ -18,6 +18,8 @@ local on_attach = function(_, bufnr)
 
   -- nmap("gd", vim.lsp.buf.definition, "[G]oto [D]efinition")
   nmap("gd", require("telescope.builtin").lsp_definitions, "[G]oto [D]efinition")
+  nmap("gjdt", "<cmd>GoToDefinitionNewTab<CR>", "[G]oto [D]efinition New [T]ab")
+  nmap("gjdv", "<cmd>GoToDefinitionNewVSplit<CR>", "[G]oto [D]efinition New [V]ertical Split")
   nmap("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
   nmap("gI", vim.lsp.buf.implementation, "[G]oto [I]mplementation")
   nmap("gi", require("telescope.builtin").lsp_implementations, "[G]oto [I]mplementation")
@@ -25,6 +27,8 @@ local on_attach = function(_, bufnr)
   nmap("<leader>D", require("telescope.builtin").lsp_type_definitions, "Type [D]efinition")
   nmap("<leader>ds", require("telescope.builtin").lsp_document_symbols, "[D]ocument [S]ymbols")
   nmap("<leader>ws", require("telescope.builtin").lsp_dynamic_workspace_symbols, "[W]orkspace [S]ymbols")
+  nmap("<leader>f", function() require("conform").format({ async = true, lsp_fallback = true }) end,
+    "Format current buffer with 'conform' plugin")
 
   nmap("K", vim.lsp.buf.hover, "Hover Documentation")
   nmap("<leader>sgh", vim.lsp.buf.signature_help, "[S]i[G]nature [H]elp")
@@ -49,6 +53,7 @@ require("mason").setup()
 require("mason-lspconfig").setup()
 
 local servers = {
+  bashls = {},
   dockerls = {},
   gopls = {
     settings = {
@@ -63,10 +68,11 @@ local servers = {
   },
   lua_ls = {
     Lua = {
-      workspace = { checkThirdParty = false },
-      telemetry = { enable = false },
+      completion = { callSnippet = "Replace" },
       -- ignore Lua_LS's noisy `missing-fields` warnings
       diagnostics = { disable = { "missing-fields" } },
+      telemetry = { enable = false },
+      workspace = { checkThirdParty = false },
     },
   },
   -- pylyzer = {},
@@ -75,9 +81,6 @@ local servers = {
   tsserver = {},
   yamlls = {},
 }
-
--- setup neovim lua configuration
-require("neodev").setup()
 
 -- nvim-cmp supports additional completion capabilities, so broadcast that to servers
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -147,6 +150,11 @@ cmp.setup {
     end, { "i", "s" }),
   },
   sources = {
+    {
+      name = "lazydev",
+      -- set group index to 0 to skip loading LuaLS completions as lazydev recommends it
+      group_index = 0,
+    },
     { name = "nvim_lsp" },
     { name = "luasnip" },
     { name = "path" },

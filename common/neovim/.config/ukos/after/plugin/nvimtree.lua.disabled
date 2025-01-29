@@ -77,7 +77,7 @@ require("nvim-tree").setup {
   -- disables netrw completely
   disable_netrw = false,
   -- hijack netrw window on startup
-  hijack_netrw = true,
+  hijack_netrw = false,
   -- opens the tree when changing/opening a new tab if the tree wasn"t previously opened
   -- open_on_tab = false,
   open_on_tab = true,

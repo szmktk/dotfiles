@@ -33,9 +33,12 @@ require("lazy").setup({
     build = ":TSUpdate",
   },
   "nvim-treesitter/playground",
-  -- "theprimeagen/harpoon",
   "mbbill/undotree",
-  "mhinz/vim-startify",
+  "rmagatti/auto-session",
+  {
+    "rmagatti/session-lens",
+    dependencies = { "rmagatti/auto-session", "nvim-telescope/telescope.nvim" }
+  },
   "airblade/vim-rooter",
   {
     "junegunn/fzf.vim",
@@ -43,7 +46,13 @@ require("lazy").setup({
   },
   {
     "nvim-tree/nvim-tree.lua",
-    dependencies = { "nvim-tree/nvim-web-devicons" }
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    enabled = false,
+  },
+  {
+    "mikavilpas/yazi.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "VeryLazy",
   },
   "wakatime/vim-wakatime",
   "tpope/vim-commentary",
@@ -54,11 +63,7 @@ require("lazy").setup({
   "ThePrimeagen/harpoon",
   "ThePrimeagen/vim-be-good",
   { "windwp/nvim-autopairs", opts = {} },
-  "RRethy/vim-illuminate",
-  "kdheepak/lazygit.nvim",
-  "tpope/vim-fugitive",            -- need this one just because I want to use vim-rhubarb
-  "tpope/vim-rhubarb",
-  "shumphrey/fugitive-gitlab.vim", -- adds GitLab suppport to vim-rhubarb
+  "tpope/vim-fugitive",
   "tpope/vim-sleuth",
   "Eandrju/cellular-automaton.nvim",
   { "akinsho/toggleterm.nvim", version = "*", config = true },
@@ -74,29 +79,37 @@ require("lazy").setup({
       -- Useful status updates for LSP
       -- `opts = {}` is the same as calling `require("fidget").setup({})`
       { "j-hui/fidget.nvim",       opts = {} },
-
-      -- Additional lua configuration, makes nvim stuff amazing!
-      "folke/neodev.nvim",
+    },
+  },
+  {
+    -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
+    -- used for completion, annotations and signatures of Neovim apis
+    "folke/lazydev.nvim",
+    ft = "lua",
+    opts = {
+      library = {
+        -- Load luvit types when the `vim.uv` word is found
+        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+      },
     },
   },
   {
     -- Autocompletion
     "hrsh7th/nvim-cmp",
+    event = "InsertEnter",
     dependencies = {
       -- Snippet Engine & its associated nvim-cmp source
-      "L3MON4D3/LuaSnip",
+      { "L3MON4D3/LuaSnip", dependencies = { "rafamadriz/friendly-snippets" } },
       "saadparwaiz1/cmp_luasnip",
 
       -- Adds LSP completion capabilities
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-path",
-
-      -- Adds a number of user-friendly snippets
-      "rafamadriz/friendly-snippets",
     },
   },
   {
     "nvim-telescope/telescope.nvim",
+    event = "VimEnter",
     branch = "0.1.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -121,7 +134,7 @@ require("lazy").setup({
   },
   {
     "folke/noice.nvim",
-    event = "VeryLazy",
+    event = "VimEnter",
     opts = {
       presets = {
         bottom_search = false,        -- use a classic bottom cmdline for search
@@ -152,6 +165,7 @@ require("lazy").setup({
   },
   {
     "folke/todo-comments.nvim",
+    event = "VimEnter",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       keywords = {
@@ -162,18 +176,33 @@ require("lazy").setup({
   },
   {
     "folke/which-key.nvim",
-    event = "VeryLazy",
-    init = function()
-      vim.o.timeout = true
-      vim.o.timeoutlen = 2000
-    end,
-    opts = {}
+    event = "VimEnter",
+    opts = { delay = 2000 }
   },
   {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
     opts = {
       indent = { char = "┊" },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    lazy = false,
+    opts = {
+      formatters_by_ft = {
+        python = function(bufnr)
+          if require("conform").get_formatter_info("ruff_format", bufnr).available then
+            return { "ruff_format" }
+          else
+            return { "isort", "black" }
+          end
+        end,
+        -- go = { "goimports", "gofmt" },
+        go = { "gofmt" },
+        -- Use a sub-list to run only the first available formatter
+        -- javascript = { { "prettierd", "prettier" } },
+      },
     },
   },
   {
@@ -200,7 +229,7 @@ require("lazy").setup({
   { "mfussenegger/nvim-dap" },
   {
     "rcarriga/nvim-dap-ui",
-    dependencies = "mfussenegger/nvim-dap",
+    dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
     opts = {},
   },
   {
@@ -222,5 +251,54 @@ require("lazy").setup({
     "theHamsta/nvim-dap-virtual-text",
     dependencies = "mfussenegger/nvim-dap",
     opts = {},
+  },
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-neotest/neotest-python",
+      { "fredrikaverpil/neotest-golang", version = "*" },
+    }
+  },
+  {
+    "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+  },
+  {
+    "allaman/kustomize.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    ft = "yaml",
+    opts = {},
+  },
+  {
+    "folke/snacks.nvim",
+    priority = 1000,
+    lazy = false,
+    ---@type snacks.Config
+    opts = {
+      bigfile = { enabled = true },
+      dashboard = {},
+      dim = {},
+      gitbrowse = {},
+      lazygit = { configure = false, win = { style = "dashboard" } },
+      scratch = {},
+      quickfile = {},
+      words = { enabled = true },
+    },
+  },
+  {
+    "nvzone/typr",
+    event = "VeryLazy",
+    dependencies = "nvzone/volt",
+    opts = {},
+    cmd = { "Typr", "TyprStats" },
   },
 })

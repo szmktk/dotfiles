@@ -54,28 +54,9 @@ vim.cmd.colorscheme("duskfox")
 -- vim.cmd.colorscheme("terafox")
 -- vim.cmd.colorscheme("carbonfox")
 
+local lualine_sections = require("ukos.theme.lualine")
 require("lualine").setup {
-  options = {
-    theme = "nightfox"
-  },
-  sections = {
-    lualine_c = {
-      {
-        "filename",
-        file_status = true,
-        newfile_status = true,
-        path = 1, -- 1: Relative path
-      }
-    }
-  },
-  inactive_sections = {
-    lualine_c = {
-      {
-        "filename",
-        file_status = true,
-        newfile_status = true,
-        path = 1, -- 1: Relative path
-      }
-    }
-  }
+  options = { theme = "nightfox" },
+  sections = lualine_sections.active,
+  inactive_sections = lualine_sections.inactive
 }
