@@ -1,10 +1,6 @@
 -- Navigation - Plugins related to navigation within Neovim
 return {
   "rmagatti/auto-session",
-  {
-    "rmagatti/session-lens",
-    dependencies = { "rmagatti/auto-session", "nvim-telescope/telescope.nvim" }
-  },
   "christoomey/vim-tmux-navigator",
   "ThePrimeagen/harpoon",
   {

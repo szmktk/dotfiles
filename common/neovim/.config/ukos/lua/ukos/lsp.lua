@@ -78,7 +78,7 @@ local servers = {
   -- pylyzer = {},
   pyright = {},
   terraformls = {},
-  tsserver = {},
+  ts_ls = {},
   yamlls = {},
 }
 

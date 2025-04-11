@@ -41,7 +41,7 @@ vim.opt.splitbelow = true
 vim.opt.spell = true
 vim.opt.complete = ".,w,b,u,t,i,kspell"
 vim.opt.omnifunc = "syntaxcomplete#Complete"
-vim.opt.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+vim.opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 vim.cmd([[
 command! -bang -nargs=* Rg
@@ -49,3 +49,9 @@ command! -bang -nargs=* Rg
   \   "rg --hidden --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
 ]])
+
+-- prevents horribly slow startup times of python buffers
+vim.g.loaded_python3_provider = 0
+
+-- enable virtual text diagnostics for the current cursor line only
+vim.diagnostic.config({ virtual_text = { current_line = true } })

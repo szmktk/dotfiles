@@ -78,7 +78,6 @@ pcall(telescope.load_extension, "fzf")
 pcall(telescope.load_extension, "harpoon")
 pcall(telescope.load_extension, "live_grep_args")
 pcall(telescope.load_extension, "undo")
-pcall(telescope.load_extension, "session-lens")
 
 -- Telescope live_grep in git root
 -- Function to find the git root directory based on the current buffer's path
@@ -181,6 +180,11 @@ map("n", "<leader>sr", telescope_builtin.resume, {
 })
 map("n", "<leader>sn", function() telescope_builtin.find_files { cwd = vim.fn.stdpath 'config' } end, {
   desc = "[S]earch [N]eovim files",
+  noremap = true,
+  silent = true,
+})
+map("n", "<leader>sm", telescope_builtin.marks, {
+  desc = "[S]earch [M]arks",
   noremap = true,
   silent = true,
 })

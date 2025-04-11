@@ -49,13 +49,25 @@ map("n", "<leader>ft", "<cmd>Filetypes<CR>")
 map("n", "<leader>jp", "<cmd>%!jq<CR>")
 map("n", "<leader>jm", "<cmd>%!jq -c<CR>")
 
+-- buffer navigation
+map("n", "[b", "<cmd>bprev<CR>")
+map("n", "]b", "<cmd>bnext<CR>")
+
+-- comments
+map("n", "<C-_>", "<cmd>Commentary<CR>")
+map("n", "gco", "o<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>")
+map("n", "gcO", "O<esc>Vcx<esc><cmd>normal gcc<cr>fxa<bs>")
+
+-- invoke git blame (aka "annotate" feature)
+map("n", "<leader>gb", "<cmd>Git blame<CR>")
+
 -- other remaps
 map("n", "<leader>gs", "<cmd>Git<CR>")
 map("n", "<leader>gk", "<cmd>vertical Git<CR>")
 map("n", "<leader>lg", "<cmd>LazyGit<CR>")
 map("n", "<leader>u", "<cmd>UndotreeToggle<CR>")
-map("n", "<C-_>", "<cmd>Commentary<CR>")
 map("n", "<leader>tw", "<cmd>set wrap!<CR>")
+map("n", "<leader>sc", "<cmd>set spell!<CR>")
 map("n", "<leader>ms", "<cmd>NvimTreeClose | mksession! | NvimTreeOpen<CR>")
 map("n", "<leader>rs", "<cmd>source Session.vim<CR>")
 map("n", "<leader>f", vim.lsp.buf.format)
@@ -74,3 +86,4 @@ map({"n", "v"}, "<leader>d", [["_d]])
 
 -- replace the word under cursor in the scope of the current buffer
 map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+map("x", "<leader>s", [["hy:%s/<C-r>h/<C-r>h/gc<Left><Left><Left>]])
