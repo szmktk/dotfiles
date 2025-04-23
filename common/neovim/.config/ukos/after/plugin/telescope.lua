@@ -193,6 +193,11 @@ map("n", "<leader>tt", telescope_builtin.builtin, {
   noremap = true,
   silent = true,
 })
+map("n", "<leader>tk", telescope_builtin.keymaps, {
+  desc = "[T]elescope [K]eymaps",
+  noremap = true,
+  silent = true,
+})
 map("n", "<leader>gs", telescope_builtin.git_status, {
   desc = "[G]it [S]tatus",
   noremap = true,
